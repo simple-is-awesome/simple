@@ -10,6 +10,12 @@
         "next/core-web-vitals"
     ],
     "overrides": [
+        {
+            "files": ["*.js", "*.mjs", "*.cjs", "*.jsx", "jest.config.js"],
+            "rules": {
+                "quotes": ["error", "single", { "allowTemplateLiterals": true, "avoidEscape": true }]
+            }
+        }
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
