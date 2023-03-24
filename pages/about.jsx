@@ -1,9 +1,9 @@
 export default function About() {
-    return (
-        <div>
-            <p>
+	return (
+		<div>
+			<p>
                 something introduce yourself
-            </p>
-        </div>
-    );
+			</p>
+		</div>
+	)
 }

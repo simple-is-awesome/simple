@@ -4,7 +4,6 @@ date: '2020-02-02'
 tags: ['nextjs','ssr','ssg']
 slug: 'ssr-vs-ssg'
 summary: 'introduce ssr and ssg'
-showtoc: true
 ---
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
