@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Header from 'components/Header'
+import Navbar from 'components/Navbar'
 import Footer from 'components/Footer'
-import ChatGPT from 'components/ChatGPT'
 
 export default function Layout({ children }) {
 	return (
@@ -14,7 +14,7 @@ export default function Layout({ children }) {
 
 			<main className="text-lg font-sans antialiased font-normal grid grid-cols-5 gap-4 my-3 flex-grow">
 				<div className="col-span-1">
-					<ChatGPT />
+					<Navbar />
 				</div>
 				<div className="col-span-4 mx-10">
 					{children}

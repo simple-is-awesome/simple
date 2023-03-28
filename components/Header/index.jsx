@@ -11,6 +11,9 @@ export default function Header() {
 						<Link href="/">Home</Link>
 					</li>
 					<li>
+						<Link href="/rss">RSS</Link>
+					</li>
+					<li>
 						<Link href="/about">About</Link>
 					</li>
 				</ul>

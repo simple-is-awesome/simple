@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev && eslint --fix .",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -17,12 +17,16 @@
     "@mdx-js/react": "^2.3.0",
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.14",
+    "@next/bundle-analyzer": "^13.2.4",
     "@next/mdx": "^13.2.4",
+    "axios": "^1.3.4",
     "dayjs": "^1.11.7",
     "gray-matter": "^4.0.3",
     "marked": "^4.2.12",
     "next": "latest",
+    "openai": "^3.2.1",
     "react": "18.2.0",
+    "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "18.2.0",
     "rehype": "^12.0.1",
     "rehype-autolink-headings": "^6.1.1",
@@ -35,6 +39,7 @@
     "remark-parse": "^10.0.1",
     "remark-rehype": "^10.1.0",
     "remark-slug": "^7.0.1",
+    "rss": "^1.2.2",
     "unified": "^10.1.2",
     "unist-util-visit": "^4.1.2"
   },

@@ -1,9 +1,13 @@
+import Layout from 'components/Layout'
+
 export default function About() {
 	return (
 		<div>
-			<p>
+			<Layout>
+				<p>
 				something introduce yourself
-			</p>
+				</p>
+			</Layout>
 		</div>
 	)
 }
