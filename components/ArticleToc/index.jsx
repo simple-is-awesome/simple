@@ -23,8 +23,8 @@ export default function Sidebar({ contentMarkdown, showtoc }) {
 	return (
 		<>
 			{showtoc && (
-				<nav className="sticky top-1/4 p-5 bg-gray-300 shadow-lg rounded-md">
-					<div className="flex items-center justify-center mb-4 cursor-pointer" onClick={toggleSidebar}>
+				<nav className="sticky top-1/4 p-5 bg-gray-300 shadow-lg rounded-md dark:text-gray-900">
+					<div className="flex items-center mb-4 cursor-pointer" onClick={toggleSidebar}>
 						{expanded ? (
 							<PlayArrowIcon className="transform rotate-90 text-gray-500" />
 						) : (

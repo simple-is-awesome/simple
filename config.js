@@ -1,5 +1,5 @@
 const config = {
-	baseURL: 'http://localhost:3000',
+	baseURL: 'https://demo.njxzc.top',
 	siteTitle: 'Demo website',
 	siteDescription: 'Demo website for Blog System',
 	keyWords: 'blog, demo, website',

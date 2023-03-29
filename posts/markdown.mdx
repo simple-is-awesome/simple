@@ -1,6 +1,6 @@
 ---
 title: "Markdown Syntax"
-date: "2023-03-14"
+date: "2023-03-31"
 tags: ["markdown"]
 slug: "markdown-syntax"
 summary: "Test markdown syntax under this blog theme."
@@ -232,9 +232,6 @@ console.log("hello world")
 - [ ] 打豆豆
 
 
-
-
-
 ## 8、引用
 
 代码：
@@ -283,3 +280,24 @@ console.log("hello world")
 | :--: | :--: | :--: |
 | 张三 | 20 | 男 |
 | 李四 | 21 | 女 |
+
+## 10、内嵌视频
+
+拿到b站或油管，内嵌代码，仅需加上相应的class即可实现自适应视频嵌入。
+
+b站的iframe元素加上`class="bilibili"`，油管的iframe元素加上`class="youtube"`。
+
+代码：
+
+```text
+<iframe width="560" height="315" src="//player.bilibili.com/player.html?aid=286406916&bvid=BV1yf4y1R7mU&cid=214423511&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="bilibili"> </iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T6gsbI35SH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="youtube"></iframe>
+```
+
+效果：
+
+<iframe width="560" height="315" src="//player.bilibili.com/player.html?aid=286406916&bvid=BV1yf4y1R7mU&cid=214423511&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="bilibili"> </iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T6gsbI35SH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="youtube"></iframe>
+

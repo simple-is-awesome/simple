@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {CopyToClipboard} from 'react-copy-to-clipboard'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
 import config from 'config'
 
 export default function ChatGPTSummary({ contentMarkdown, params, tags }) {
@@ -31,9 +31,9 @@ export default function ChatGPTSummary({ contentMarkdown, params, tags }) {
 			<>
 				{summary ? (
 					<>
-						<p>标签：{formattedTags}</p>
-						<p>总结: {summary}</p>
-						<p>via: {config.baseURL}/{params.year}/{params.month}/{params.slug} </p>
+						<p className="break-words max-w-full">标签：{formattedTags}</p>
+						<p className="break-words max-w-full">总结: {summary}</p>
+						<p className="break-words max-w-full">via: {config.baseURL}/{params.year}/{params.month}/{params.slug} </p>
 						<CopyToClipboard text={copyText} onCopy={() => setIsCopied(true)}>
 							<button className="absolute top-1 right-1 bg-blue-500 hover:bg-blue-700 text-white text-xs font-bold py-1 px-2 rounded">
 								{isCopied ? '已复制' : '复制摘要'}
@@ -41,7 +41,7 @@ export default function ChatGPTSummary({ contentMarkdown, params, tags }) {
 						</CopyToClipboard>
 					</>
 				) : (
-					<p>ChatGPT正在为你总结信息，请稍等...</p>
+					<p className="break-words max-w-full">ChatGPT正在为你总结信息，请稍等...</p>
 				)}
 			</>
 		</div>

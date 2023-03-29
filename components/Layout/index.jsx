@@ -1,26 +1,26 @@
 import Head from 'next/head'
 import Header from 'components/Header'
-import Navbar from 'components/Navbar'
 import Footer from 'components/Footer'
-
-export default function Layout({ children }) {
+import ScrollToTop from 'components/ScrollToTop'
+ 
+export default function Layout({ children, handleResetSearch}) {
 	return (
-		<div className="container mx-auto flex flex-col min-h-screen">
-			<Head>
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
+		<>
+			<div className="container mx-auto flex flex-col min-h-screen">
+				<Head>
+					<link rel="icon" href="/favicon.ico" />
+				</Head>
 
-			<Header />
+				<Header handleResetSearch={handleResetSearch} />
 
-			<main className="text-lg font-sans antialiased font-normal grid grid-cols-5 gap-4 my-3 flex-grow">
-				<div className="col-span-1">
-					<Navbar />
-				</div>
-				<div className="col-span-4 mx-10">
+				<main className="text-lg font-sans antialiased font-normal flex-grow p-5 mx-auto">
 					{children}
-				</div>
-			</main>
-			<Footer />
-		</div>
+				</main>
+
+				<Footer />
+
+			</div>
+			<ScrollToTop />
+		</>
 	)
 }

@@ -14,7 +14,7 @@ export default function Inoreader() {
 	}, [])
 
 	return (
-		<div className="bg-white shadow-lg rounded-lg p-6 my-8">
+		<div className="bg-white shadow-lg rounded-lg p-6 my-8 dark:bg-gray-600 dark:text-gray-100">
 			<div className="text-2xl font-semibold mb-4">阅读分享</div>
 			<ul className="space-y-4">
 				{inoreaderData.map((item) => (
@@ -23,7 +23,7 @@ export default function Inoreader() {
 							href={item.url}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="text-blue-600 hover:text-blue-800"
+							className="text-blue-600 hover:text-blue-800 dark:text-gray-100"
 						>
 							{item.title}{' '}-{' '}
 						</a>
