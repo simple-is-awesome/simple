@@ -33,12 +33,13 @@ export default function Post({ postData, params,handleResetSearch}) {
 								<div className="my-3">
 									<span className="font-bold">Tags:{' '}</span>
 									{postData.tags.map((tag, index) => (
-										<span
+										<Link
 											key={index}
 											className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+											href={`/tags/${tag}`}
 										>
 											{tag}
-										</span>
+										</Link>
 									))}
 								</div>
 								<div className="my-12 mx-0">

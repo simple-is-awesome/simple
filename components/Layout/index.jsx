@@ -13,7 +13,7 @@ export default function Layout({ children, handleResetSearch}) {
 
 				<Header handleResetSearch={handleResetSearch} />
 
-				<main className="text-lg font-sans antialiased font-normal flex-grow p-5 mx-auto">
+				<main className="text-lg font-sans antialiased font-normal flex-grow p-3 mx-auto">
 					{children}
 				</main>
 
