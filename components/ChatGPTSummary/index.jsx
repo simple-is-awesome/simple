@@ -46,7 +46,7 @@ export default function ChatGPTSummary({ contentMarkdown, params, tags }) {
 						<p className="break-words max-w-full">via: {config.baseURL}/{params.year}/{params.month}/{params.slug} </p>
 					</div>
 				) : (
-					<p className="break-words max-w-full">{isFetching ? 'ChatGPT正在为你总结信息，请稍等...' : '点击下方按钮生成本文摘要'}</p>
+					<p className="break-words max-w-full text-center">{isFetching ? 'ChatGPT正在为你总结信息，请稍等...' : '点击下方按钮生成本文摘要'}</p>
 				)}
 				<div className="flex justify-center items-center">
 					{showCopyButton ? (
