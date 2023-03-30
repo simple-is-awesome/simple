@@ -80,20 +80,20 @@ export default function Home({ allPostsData, recentPosts, allTags, handleResetSe
 			  </button>
 				)}
 				<span className="px-4 py-2">
-			  {currentPage} / {totalPages}
+					{currentPage} / {totalPages}
 				</span>
 				{currentPage !== totalPages && (
-			  <button
+					<button
 						className="px-4 py-2 bg-gray-300 text-black rounded ml-2 dark:bg-gray-600 dark:text-gray-100"
 						onClick={() =>
-				  setCurrentPage((prevPage) => Math.min(totalPages, prevPage + 1))
+							setCurrentPage((prevPage) => Math.min(totalPages, prevPage + 1))
 						}
 						disabled={currentPage === totalPages}
-			  >
+					>
 				Next
-			  </button>
+					</button>
 				)}
-		  </div>
+			</div>
 		)
 	  }
 	  

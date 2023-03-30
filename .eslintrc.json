@@ -11,9 +11,22 @@
     ],
     "overrides": [
         {
-            "files": ["*.js", "*.mjs", "*.cjs", "*.jsx", "jest.config.js"],
+            "files": [
+                "*.js",
+                "*.mjs",
+                "*.cjs",
+                "*.jsx",
+                "jest.config.js"
+            ],
             "rules": {
-                "quotes": ["error", "single", { "allowTemplateLiterals": true, "avoidEscape": true }]
+                "quotes": [
+                    "error",
+                    "single",
+                    {
+                        "allowTemplateLiterals": true,
+                        "avoidEscape": true
+                    }
+                ]
             }
         }
     ],
@@ -40,6 +53,10 @@
         "semi": [
             "error",
             "never"
+        ],
+        "no-mixed-spaces-and-tabs": [
+            "error",
+            "smart-tabs"
         ]
     }
 }
