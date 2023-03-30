@@ -50,7 +50,7 @@ export default function Header({handleResetSearch}) {
 								<Link href="/gallery">Gallery</Link>
 							</li>
 							<li>
-								<Link href="/rss">RSS</Link>
+								<Link href="/rss.xml">RSS</Link>
 							</li>
 							<li>{RenderThemeChanger()}</li>
 						</ul>

@@ -9,6 +9,7 @@ import { getSortedPostsData, getAllTags } from 'lib/posts'
 import config from 'config'
 import { useContext,useState } from 'react'
 import SearchContext from 'contexts/SearchContext'
+import generateRSSFeed from 'lib/generateRSSFeed'
 
 export default function Home({ allPostsData, recentPosts, allTags, handleResetSearch }) {
 
@@ -123,6 +124,7 @@ export async function getStaticProps() {
 	const allPostsData = getSortedPostsData()
 	const recentPosts = allPostsData.slice(0, 5)
 	const allTags = await getAllTags()
+	await generateRSSFeed()
 	return {
 		props: {
 			allPostsData,
