@@ -1,3 +1,5 @@
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 ## 简要说明
 
 一个专为博客爱好者打造的简约博客主题，基于Next.js构建。
