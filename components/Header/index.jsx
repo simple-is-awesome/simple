@@ -31,7 +31,7 @@ export default function Header({handleResetSearch}) {
 			<div className="grid grid-cols-12 gap-8 px-5 w-full">
 				<div className="col-span-2">
 				</div>
-				<div className="col-span-7 flex justify-between space-x-4">
+				<div className="hidden lg:col-span-7 lg:flex justify-between space-x-4">
 					<div className="text-2xl">
 						<Link href="/" onClick={handleResetSearch}>{config.siteTitle}</Link>
 					</div>

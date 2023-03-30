@@ -10,7 +10,6 @@ import config from 'config'
 import { useContext,useState } from 'react'
 import SearchContext from 'contexts/SearchContext'
 
-
 export default function Home({ allPostsData, recentPosts, allTags, handleResetSearch }) {
 
 	const { searchResults, searchPerformed } = useContext(SearchContext)
@@ -63,43 +62,53 @@ export default function Home({ allPostsData, recentPosts, allTags, handleResetSe
 	}
 
 	const renderPagination = (postsPerPage) => {
-		const totalPages = searchPerformed ? Math.ceil(searchResults.length / postsPerPage) : Math.ceil(allPostsData.length / postsPerPage)
-
+		const totalPages = searchPerformed
+		  ? Math.ceil(searchResults.length / postsPerPage)
+		  : Math.ceil(allPostsData.length / postsPerPage)
+	  
 		return (
-			<div className="flex justify-center my-4">
-				<button
-					className="px-4 py-2 bg-gray-300 text-black rounded mr-2 dark:bg-gray-600 dark:text-gray-100"
-					onClick={() => setCurrentPage((prevPage) => Math.max(1, prevPage - 1))}
-					disabled={currentPage === 1}
-				>
-					Previous
-				</button>
+		  <div className="flex justify-center my-4">
+				{currentPage !== 1 && (
+			  <button
+						className="px-4 py-2 bg-gray-300 text-black rounded mr-2 dark:bg-gray-600 dark:text-gray-100"
+						onClick={() =>
+				  setCurrentPage((prevPage) => Math.max(1, prevPage - 1))
+						}
+						disabled={currentPage === 1}
+			  >
+				Previous
+			  </button>
+				)}
 				<span className="px-4 py-2">
-					{currentPage} / {totalPages}
+			  {currentPage} / {totalPages}
 				</span>
-				<button
-					className="px-4 py-2 bg-gray-300 text-black rounded ml-2 dark:bg-gray-600 dark:text-gray-100"
-					onClick={() => setCurrentPage((prevPage) => Math.min(totalPages, prevPage + 1))}
-					disabled={currentPage === totalPages}
-				>
-					Next
-				</button>
-			</div>
+				{currentPage !== totalPages && (
+			  <button
+						className="px-4 py-2 bg-gray-300 text-black rounded ml-2 dark:bg-gray-600 dark:text-gray-100"
+						onClick={() =>
+				  setCurrentPage((prevPage) => Math.min(totalPages, prevPage + 1))
+						}
+						disabled={currentPage === totalPages}
+			  >
+				Next
+			  </button>
+				)}
+		  </div>
 		)
-	}
+	  }
+	  
 
-
-	return (
+	  return (
 		<Layout handleResetSearch={handleResetSearch}>
 			<Head>
 				<title>{config.siteTitle}</title>
 			</Head>
-			<section className="grid grid-cols-12 gap-8 px-5">
-				<div className="col-span-2" />
-				<div className="col-span-7">
-					<div className="col-span-7">{renderPosts()}</div>
+			<section className="grid grid-cols-1 lg:grid-cols-12 gap-8 px-5">
+				<div className="hidden lg:block lg:col-span-2" />
+				<div className="col-span-full lg:col-span-7">
+					<div>{renderPosts()}</div>
 				</div>
-				<div className="col-span-3">
+				<div className="hidden lg:block lg:col-span-3">
 					<RecentPosts posts={recentPosts} />
 					<Inoreader />
 					<TagCloud tags={allTags} />
@@ -107,6 +116,7 @@ export default function Home({ allPostsData, recentPosts, allTags, handleResetSe
 			</section>
 		</Layout>
 	)
+	
 }
 
 export async function getStaticProps() {

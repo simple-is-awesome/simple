@@ -16,13 +16,14 @@ export default function Post({ postData, params,handleResetSearch}) {
 			<>
 				<div className="flex flex-col md:grid md:grid-cols-6 md:gap-2">
 					<div className="md:col-span-1 order-1 md:order-1">
-						<div className='sticky top-1/4 bottom-1/4 p-2 bg-gray-300 shadow-lg rounded-md dark:text-gray-900'>
+						<div className='md:sticky top-1/4 bottom-1/4 p-2 bg-gray-300 shadow-lg rounded-md dark:text-gray-900 mx-auto md:mx-0 w-full md:w-auto'>
 							<ChatGPTSummary contentMarkdown={postData.contentMarkdown} params={params} tags={postData.tags} />
 						</div>
 					</div>
-					<div className="col-span-5 mx-10 order-2 md:order-2">
+
+					<div className="col-span-5 mx-auto md:mx-10 order-2 md:order-2 p-4">
 						<div className="grid grid-cols-5 gap-4">
-							<article className="col-span-4 leading-relaxed tracking-wide">
+							<article className="col-span-5 md:col-span-4 leading-relaxed tracking-wide">
 								<h1 className="text-3xl font-semibold text-center my-3">{postData.title}</h1>
 								<div className="text-right text-xl my-3">
 									<span className="text-gray-500">Posted on</span>{' '}
@@ -45,7 +46,7 @@ export default function Post({ postData, params,handleResetSearch}) {
 								</div>
 							</article>
 
-							<div className="col-span-1">
+							<div className="hidden md:hidden lg:col-span-1">
 								<ArticleToc contentMarkdown={postData.contentMarkdown} showtoc={postData.showtoc} />
 							</div>
 						</div>
