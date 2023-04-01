@@ -6,8 +6,9 @@ import ArticleToc from 'components/ArticleToc'
 import ChatGPTSummary from 'components/ChatGPTSummary'
 import ScrollToTop from 'components/ScrollToTop'
 import { getAllPostMetadata, getPostDataByFileName } from 'lib/posts'
+import Comment from 'components/Comment'
 
-export default function Post({ postData, params,handleResetSearch}) {
+export default function Post({ postData, params, handleResetSearch }) { 
 	return (
 		<ArticleLayout handleResetSearch={handleResetSearch}>
 			<Head>
@@ -45,6 +46,7 @@ export default function Post({ postData, params,handleResetSearch}) {
 								<div className="my-12 mx-0">
 									<Link href="/">← Back to home</Link>
 								</div>
+								<Comment />
 							</article>
 
 							<div className="hidden md:hidden lg:col-span-1">
