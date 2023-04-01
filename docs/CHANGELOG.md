@@ -1,3 +1,13 @@
+# [3.0.0](https://github.com/simple-is-awesome/simple/compare/v2.0.0...v3.0.0) (2023-04-01)
+
+
+* :sparkles: add supabase comment support ([44f1bb5](https://github.com/simple-is-awesome/simple/commit/44f1bb59477314f1a06402893acce0d689ab5d52))
+
+
+### BREAKING CHANGES
+
+* Supabase integrates with Next.js
+
 # [2.0.0](https://github.com/simple-is-awesome/simple/compare/v1.0.0...v2.0.0) (2023-03-30)
 
 
