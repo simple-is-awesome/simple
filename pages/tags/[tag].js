@@ -25,7 +25,7 @@ export default function TaggedPosts({ posts, tag }) {
 					</li>
 				))}
 			</ul>
-			<div className="mt-4">
+			<div className=" flex justify-center items-center mt-4">
 				<Link href="/" className="text-blue-500">
           ← Back to home
 				</Link>

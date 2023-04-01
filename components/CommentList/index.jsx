@@ -3,8 +3,7 @@ import CryptoJS from 'crypto-js'
 import Image from 'next/image'
 import Date from 'components/Date'
 
-export default function CommentList({ comments}) {
-
+export default function CommentList({ comments, onQuote }) {
 	const generateIdenticon = (username) => {
 		const hash = CryptoJS.MD5(username).toString()
 		const data = new Identicon(hash, { size: 64, format: 'svg' }).toString()
@@ -30,12 +29,23 @@ export default function CommentList({ comments}) {
 										height="32"
 										className="rounded-full"
 									/>
-									<Date dateString={comment.created_at} format="h:mm A M/D/YYYY"/>
+									<Date dateString={comment.created_at} format="h:mm A M/D/YYYY" />
 								</div>
 							</div>
-							<div className="flex-1">
-								<p className="text-gray-700 dark:text-gray-300">{comment.content}</p>
+							<div className="flex-1 flex flex-col">
+								<div className="flex-1 flex justify-between items-center">
+									<p className="text-gray-700 dark:text-gray-300" dangerouslySetInnerHTML={{ __html: comment.content }}></p>
+								</div>
+								<div className="flex justify-end items-center space-x-2">
+									<button
+										className="text-blue-500 hover:text-blue-700"
+										onClick={() => onQuote(comment)}
+									>
+      Quote
+									</button>
+								</div>
 							</div>
+
 						</div>
 					))}
 				</div>

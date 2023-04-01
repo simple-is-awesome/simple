@@ -26,7 +26,9 @@ export default function GalleryPage() {
 				<title>Gallery</title>
 			</Head>
 			<div className='text-3xl text-center my-3'>画廊</div>
-			<ImageGallery items={images} />
+			<div className='flex justify-center'>
+				<ImageGallery items={images} widh/>
+			</div>	
 		</Layout>
 	)
 }

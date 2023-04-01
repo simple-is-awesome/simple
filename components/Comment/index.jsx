@@ -4,33 +4,33 @@ import supabase from 'utils/supabase'
 import { useState, useEffect } from 'react'
 
 export default function Comment() {
-
 	const [comments, setComments] = useState([])
+	const [quote, setQuote] = useState('')
 
 	useEffect(() => {
-	  fetchComments()
+		fetchComments()
 	}, [])
-  
+
 	const fetchComments = async () => {
-	  const { data, error } = await supabase
+		const { data, error } = await supabase
 			.from('comments')
 			.select('*')
 			.eq('url', window.location.href)
 			.order('created_at', { ascending: true })
-	  if (error) {
+		if (error) {
 			console.error('Error fetching comments:', error)
-	  } else {
+		} else {
 			setComments(data)
-	  }
+		}
 	}
-  
+
 	const addComment = async (comment) => {
 		const commentWithUrl = {
-		  ...comment,
-		  url: window.location.href,
+			...comment,
+			url: window.location.href,
 		}
-		const { data, error }=await supabase
-		  .from('comments')
+		const { data, error } = await supabase
+			.from('comments')
 			.insert([commentWithUrl])
 			.select()
 		if (error) {
@@ -40,11 +40,15 @@ export default function Comment() {
 		}
 	}
 
-	return (
+	const quoteComment = (comment) => {
+		setQuote(`引用${comment.username}的发言:<br/>${comment.content}<br/>`)
+	}
+
+	  return (
 		<>
-			<CommentForm onSubmit={addComment} />
-			<h2 className="text-3xl font-bold mt-8 mb-4">Comments</h2>
-			<CommentList comments={comments} />
+		  <CommentForm onSubmit={addComment} quote={quote} onQuoteCleared={setQuote} />
+		  <h2 className="text-3xl font-bold mt-8 mb-4">Comments</h2>
+		  <CommentList comments={comments} onQuote={quoteComment} />
 		</>
-	)
+	  )
 }
