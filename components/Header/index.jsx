@@ -3,7 +3,8 @@ import { useTheme } from 'next-themes'
 import Search from 'components/Search'
 import config from 'config'
 
-export default function Header({handleResetSearch}) {
+// 顶部导航栏组件
+export default function Header() {
 	const RenderThemeChanger = () => {
 		const { theme, systemTheme, setTheme } = useTheme()
 		const currentTheme = theme === 'system' ? systemTheme : theme
@@ -33,9 +34,9 @@ export default function Header({handleResetSearch}) {
 				</div>
 				<div className="hidden lg:col-span-7 lg:flex justify-between space-x-4">
 					<div className="text-2xl">
-						<Link href="/" onClick={handleResetSearch}>{config.siteTitle}</Link>
+						<Link href="/">{config.siteTitle}</Link>
 					</div>
-					<Search handleResetSearch={handleResetSearch} />
+					<Search />
 				</div>
 				<div className="col-span-3">
 					<nav>

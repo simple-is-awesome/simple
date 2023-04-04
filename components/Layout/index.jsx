@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
 import ScrollToTop from 'components/ScrollToTop'
- 
+
+// 页面布局
 export default function Layout({ children, handleResetSearch}) {
 	return (
 		<>

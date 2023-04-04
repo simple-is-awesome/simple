@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import config from 'config'
 
+// chatgpt总结组件
 export default function ChatGPTSummary({ contentMarkdown, params, tags }) {
 	const [showCopyButton, setShowCopyButton] = useState(false)
 	const [summary, setSummary] = useState(null)

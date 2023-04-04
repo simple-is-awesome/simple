@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id/>
     <title>Demo website</title>
-    <updated>2023-04-01T13:31:16.793Z</updated>
+    <updated>2023-04-04T09:20:40.495Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Demo Website</name>
@@ -48,9 +48,9 @@
 </span><span class="code-line">[^3]:https://chat.openai.com
 </span></code></pre>
 <p>效果：</p>
-<p>Google<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup></p>
-<p>Bing<sup><a href="#user-content-fn-2" id="user-content-fnref-2" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup></p>
-<p>ChatGPT<sup><a href="#user-content-fn-3" id="user-content-fnref-3" data-footnote-ref="" aria-describedby="footnote-label">3</a></sup></p>
+<p>Google<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref aria-describedby="footnote-label">1</a></sup></p>
+<p>Bing<sup><a href="#user-content-fn-2" id="user-content-fnref-2" data-footnote-ref aria-describedby="footnote-label">2</a></sup></p>
+<p>ChatGPT<sup><a href="#user-content-fn-3" id="user-content-fnref-3" data-footnote-ref aria-describedby="footnote-label">3</a></sup></p>
 <h2 id="3代码"><a aria-hidden="true" tabindex="-1" href="#3代码"><span class="icon icon-link"></span></a>3、代码</h2>
 <h3 id="31行内代码"><a aria-hidden="true" tabindex="-1" href="#31行内代码"><span class="icon icon-link"></span></a>3.1、行内代码：</h3>
 <p>代码：</p>
@@ -203,27 +203,27 @@
 </span><span class="code-line">| 李四 | 21 | 女 |
 </span></code></pre>
 <p>效果：</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th align="center">姓名</th><th align="center">年龄</th><th align="center">性别</th></tr></thead><tbody><tr><td align="center">张三</td><td align="center">20</td><td align="center">男</td></tr><tr><td align="center">李四</td><td align="center">21</td><td align="center">女</td></tr></tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">姓名</th>
+<th align="center">年龄</th>
+<th align="center">性别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">张三</td>
+<td align="center">20</td>
+<td align="center">男</td>
+</tr>
+<tr>
+<td align="center">李四</td>
+<td align="center">21</td>
+<td align="center">女</td>
+</tr>
+</tbody>
+</table>
 <h2 id="10内嵌视频"><a aria-hidden="true" tabindex="-1" href="#10内嵌视频"><span class="icon icon-link"></span></a>10、内嵌视频</h2>
 <p>拿到b站或油管，内嵌代码，仅需加上相应的class即可实现自适应视频嵌入。</p>
 <p>b站的iframe元素加上<code>class="bilibili"</code>，油管的iframe元素加上<code>class="youtube"</code>。</p>
@@ -233,18 +233,18 @@
 </span><span class="code-line">&#x3C;iframe width="560" height="315" src="https://www.youtube.com/embed/T6gsbI35SH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="youtube">&#x3C;/iframe>
 </span></code></pre>
 <p>效果：</p>
-<iframe width="560" height="315" src="//player.bilibili.com/player.html?aid=286406916&#x26;bvid=BV1yf4y1R7mU&#x26;cid=214423511&#x26;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen class="bilibili"> </iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/T6gsbI35SH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="youtube"></iframe>
-<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label"><a aria-hidden="true" tabindex="-1" href="#footnote-label"><span class="icon icon-link"></span></a>Footnotes</h2>
+&#x3C;iframe width="560" height="315" src="//player.bilibili.com/player.html?aid=286406916&#x26;bvid=BV1yf4y1R7mU&#x26;cid=214423511&#x26;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="bilibili"> &#x3C;/iframe>
+&#x3C;iframe width="560" height="315" src="https://www.youtube.com/embed/T6gsbI35SH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="youtube">&#x3C;/iframe>
+<section data-footnotes class="footnotes"><h2 class="sr-only" id="footnote-label"><a aria-hidden="true" tabindex="-1" href="#footnote-label"><span class="icon icon-link"></span></a>Footnotes</h2>
 <ol>
 <li id="user-content-fn-1">
-<p><a href="https://google.com">https://google.com</a> <a href="#user-content-fnref-1" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+<p><a href="https://google.com">https://google.com</a> <a href="#user-content-fnref-1" data-footnote-backref class="data-footnote-backref" aria-label="Back to content">↩</a></p>
 </li>
 <li id="user-content-fn-2">
-<p><a href="https://www.bing.com">https://www.bing.com</a> <a href="#user-content-fnref-2" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+<p><a href="https://www.bing.com">https://www.bing.com</a> <a href="#user-content-fnref-2" data-footnote-backref class="data-footnote-backref" aria-label="Back to content">↩</a></p>
 </li>
 <li id="user-content-fn-3">
-<p><a href="https://chat.openai.com">https://chat.openai.com</a> <a href="#user-content-fnref-3" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+<p><a href="https://chat.openai.com">https://chat.openai.com</a> <a href="#user-content-fnref-3" data-footnote-backref class="data-footnote-backref" aria-label="Back to content">↩</a></p>
 </li>
 </ol>
 </section>]]></summary>
@@ -385,10 +385,11 @@ The great President Trump, a legend unsurpassed.</p>
         <id>http://localhost:3000/2023/03/english-readme-of-hugo-theme-simple</id>
         <link href="http://localhost:3000/2023/03/english-readme-of-hugo-theme-simple"/>
         <updated>2023-03-30T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<h1 align="center" id="hugo-theme-simple--demo"><a aria-hidden="true" tabindex="-1" href="#hugo-theme-simple--demo"><span class="icon icon-link"></span></a>Hugo-Theme-Simple | <a href="https://hugo.njxzc.top" target="_blank">Demo</a></h1>
-<p align="center">
-<img src="https://vip2.loli.io/2023/03/15/9LJ1QX8kKZrRtwA.webp" alt="Simple quote">
-</p>
+        <summary type="html"><![CDATA[<p>Glarity Summary</p>
+&#x3C;h1 align=center>Hugo-Theme-Simple | &#x3C;a href="https://hugo.njxzc.top" target="_blank">Demo&#x3C;/a>&#x3C;/h1>
+&#x3C;p align="center">
+&#x3C;img src="https://vip2.loli.io/2023/03/15/9LJ1QX8kKZrRtwA.webp" alt="Simple quote">
+&#x3C;/p>
 <p><a href="https://github.com/simple-is-awesome/Hugo-Theme-Simple/blob/main/README.zh-CN.md">简体中文版本</a></p>
 <h2 id="introduction"><a aria-hidden="true" tabindex="-1" href="#introduction"><span class="icon icon-link"></span></a>Introduction</h2>
 <p>This theme is named Simple. It's built based on Bootstrap+Lightbox+jQuery.</p>
@@ -434,7 +435,7 @@ The great President Trump, a legend unsurpassed.</p>
 <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line">hugo server
 </span></code></pre>
 <p>You can see the gif below, which shows the step2 and step3:</p>
-<img src="https://github.com/simple-is-awesome/Hugo-Theme-Simple/blob/main/static/images/hugo_step2_step3.gif?raw=true" width="800px" alt="step2 and step3 demo">
+&#x3C;img src="https://github.com/simple-is-awesome/Hugo-Theme-Simple/blob/main/static/images/hugo_step2_step3.gif?raw=true" width="800px" alt="step2 and step3 demo">
 <ul>
 <li>step4</li>
 </ul>
@@ -470,10 +471,11 @@ The great President Trump, a legend unsurpassed.</p>
         <id>http://localhost:3000/2023/03/chinese-readme-of-hugo-theme-simple</id>
         <link href="http://localhost:3000/2023/03/chinese-readme-of-hugo-theme-simple"/>
         <updated>2023-03-30T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<h1 align="center" id="hugo-theme-simple--demo"><a aria-hidden="true" tabindex="-1" href="#hugo-theme-simple--demo"><span class="icon icon-link"></span></a>Hugo-Theme-Simple | <a href="https://hugo.njxzc.top" target="_blank">Demo</a></h1>
-<p align="center">
-<img src="https://vip2.loli.io/2023/03/15/9LJ1QX8kKZrRtwA.webp" alt="Simple quote">
-</p>
+        <summary type="html"><![CDATA[<p>Glarity Summary</p>
+&#x3C;h1 align=center>Hugo-Theme-Simple | &#x3C;a href="https://hugo.njxzc.top" target="_blank">Demo&#x3C;/a>&#x3C;/h1>
+&#x3C;p align="center">
+&#x3C;img src="https://vip2.loli.io/2023/03/15/9LJ1QX8kKZrRtwA.webp" alt="Simple quote">
+&#x3C;/p>
 <p><a href="https://github.com/simple-is-awesome/Hugo-Theme-Simple/blob/main/README.md">English version</a></p>
 <h2 id="介绍"><a aria-hidden="true" tabindex="-1" href="#介绍"><span class="icon icon-link"></span></a>介绍</h2>
 <p>Hugo Theme Simple是一款简约的Hugo博客主题，采用Bootstrap+Lightbox+jQuery构建完成。</p>
@@ -521,7 +523,7 @@ The great President Trump, a legend unsurpassed.</p>
 </span><span class="code-line">hugo server
 </span></code></pre>
 <p>你可以看以下的gif动图，这张动图展示了步骤二和步骤三的操作流程：</p>
-<img src="https://github.com/simple-is-awesome/Hugo-Theme-Simple/blob/main/static/images/hugo_step2_step3.gif?raw=true" width="800px" alt="step2 and step3 demo">
+&#x3C;img src="https://github.com/simple-is-awesome/Hugo-Theme-Simple/blob/main/static/images/hugo_step2_step3.gif?raw=true" width="800px" alt="step2 and step3 demo">
 <ul>
 <li>步骤四</li>
 </ul>
@@ -553,7 +555,8 @@ The great President Trump, a legend unsurpassed.</p>
         <id>http://localhost:3000/2023/03/github-flavored-markdown</id>
         <link href="http://localhost:3000/2023/03/github-flavored-markdown"/>
         <updated>2023-03-30T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<pre><code class="code-highlight"><span class="code-line">&#x3C;details>
+        <summary type="html"><![CDATA[<p>代码：</p>
+<pre><code class="code-highlight"><span class="code-line">&#x3C;details>
 </span><span class="code-line">&#x3C;summary>
 </span><span class="code-line">
 </span><span class="code-line">## close demo
@@ -561,13 +564,14 @@ The great President Trump, a legend unsurpassed.</p>
 </span><span class="code-line">This is a default hidden place.
 </span><span class="code-line">&#x3C;/details>
 </span></code></pre>
-<details>
-<summary>
+<p>效果：</p>
+&#x3C;details>
+&#x3C;summary>
 <h2 id="close-demo"><a aria-hidden="true" tabindex="-1" href="#close-demo"><span class="icon icon-link"></span></a>close demo</h2>
-</summary>
+&#x3C;/summary>
 This is a default hidden place.
-</details>
-<hr>
+&#x3C;/details>
+<p>代码：</p>
 <pre><code class="code-highlight"><span class="code-line">&#x3C;details>
 </span><span class="code-line">&#x3C;summary open>
 </span><span class="code-line">
@@ -576,12 +580,13 @@ This is a default hidden place.
 </span><span class="code-line">This is a default open place.
 </span><span class="code-line">&#x3C;/details>
 </span></code></pre>
-<details open>
-<summary>
+<p>效果：</p>
+&#x3C;details open>
+&#x3C;summary>
 <h2 id="open-demo"><a aria-hidden="true" tabindex="-1" href="#open-demo"><span class="icon icon-link"></span></a>open demo</h2>
-</summary>
+&#x3C;/summary>
 This is a default open place.
-</details>]]></summary>
+&#x3C;/details>]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[最伟大的作品]]></title>

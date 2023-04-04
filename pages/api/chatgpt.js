@@ -1,11 +1,14 @@
 import { Configuration, OpenAIApi } from 'openai'
 
+// Create an instance of the OpenAI API
 const configuration = new Configuration({
 	apiKey: process.env.OPENAI_API_KEY,
-	organization: 'org-xQYSuej4Mv0FrPbnaUyA7G25',
+	organization: process.env.OPENAI_ORG_ID,
 })
+
 const openai = new OpenAIApi(configuration)
 
+// Create a completion
 export default async function handler(req, res) {
 	if (req.method === 'POST') {
 		const { message } = req.body

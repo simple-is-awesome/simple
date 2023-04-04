@@ -10,7 +10,6 @@ const withMDX = createMDX({
 	},
 })
 
-// 添加这一行来配置NextBundleAnalyzer
 const withBundleAnalyzer = NextBundleAnalyzer({
 	enabled: process.env.ANALYZE === 'true',
 })

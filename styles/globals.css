@@ -50,4 +50,11 @@
     align-items: center;
     padding: 20px 0;
   }
-  
+
+.aplayer-info {
+    display: block !important;
+}
+
+.aplayer-title, .aplayer-list-title {
+    @apply dark:text-gray-600
+}

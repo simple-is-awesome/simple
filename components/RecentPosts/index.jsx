@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+// 近期文章组件
 export default function RecentPosts({ posts }) {
 	return (
 		<div className='bg-white shadow-lg rounded-lg p-6 dark:bg-gray-600 dark:text-gray-100'>

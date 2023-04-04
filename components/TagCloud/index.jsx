@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+// 标签云组件
 export default function TagCloud({ tags }) {
 	return (
 		<div className="bg-white shadow-lg rounded-lg p-6 my-8 dark:bg-gray-600 dark:text-gray-100">

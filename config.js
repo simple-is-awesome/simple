@@ -4,7 +4,7 @@ const config = {
 	siteDescription: 'Demo website for Blog System',
 	keyWords: 'blog, demo, website',
 	footer: '&copy; 2023 Made with ❤️ By Jiakai',
-	postsPerPage: 5,
+	postsPerPage: 10,
 }
 
 export default config

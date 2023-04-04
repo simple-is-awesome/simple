@@ -2,6 +2,7 @@ import { getPostsListByTag, getAllTags } from 'lib/posts'
 import Link from 'next/link'
 import Layout from 'components/Layout'
 import Date from 'components/Date'
+import BackButton from 'components/Backbutton'
 
 export default function TaggedPosts({ posts, tag }) {
 	return (
@@ -26,9 +27,7 @@ export default function TaggedPosts({ posts, tag }) {
 				))}
 			</ul>
 			<div className=" flex justify-center items-center mt-4">
-				<Link href="/" className="text-blue-500">
-          ← Back to home
-				</Link>
+				<BackButton />
 			</div>
 		</Layout>
 	)

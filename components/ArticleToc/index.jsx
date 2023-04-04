@@ -2,6 +2,7 @@ import { useState } from 'react'
 import parseHeading from 'lib/parseHeading'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 
+// 文章目录组件
 export default function Sidebar({ contentMarkdown, showtoc }) {
 	const [expanded, setExpanded] = useState(true)
 	const headings = parseHeading(contentMarkdown)

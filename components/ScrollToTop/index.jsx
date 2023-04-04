@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import IconButton from '@mui/material/IconButton'
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
 
+// 返回顶部组件
 export default function ScrollToTop() {
 	const [isVisible, setIsVisible] = useState(false)
 

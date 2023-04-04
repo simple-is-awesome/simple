@@ -8,6 +8,7 @@ showtoc: true
 ---
 
 
+Glarity Summary
 <h1 align=center>Hugo-Theme-Simple | <a href="https://hugo.njxzc.top" target="_blank">Demo</a></h1>
 
 <p align="center">
