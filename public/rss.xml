@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id/>
     <title>Demo website</title>
-    <updated>2023-04-04T09:20:40.495Z</updated>
+    <updated>2023-04-04T13:37:29.942Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Demo Website</name>
@@ -10,7 +10,7 @@
     </author>
     <link rel="alternate" href="https://demo.njxzc.top"/>
     <subtitle>Demo website for Blog System</subtitle>
-    <rights>&amp;copy; 2023 Made with ❤️ By Jiakai</rights>
+    <rights>© 2023 Made with ❤️ By Jiakai</rights>
     <entry>
         <title type="html"><![CDATA[Markdown Syntax]]></title>
         <id>http://localhost:3000/2023/03/markdown-syntax</id>
@@ -385,8 +385,7 @@ The great President Trump, a legend unsurpassed.</p>
         <id>http://localhost:3000/2023/03/english-readme-of-hugo-theme-simple</id>
         <link href="http://localhost:3000/2023/03/english-readme-of-hugo-theme-simple"/>
         <updated>2023-03-30T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>Glarity Summary</p>
-&#x3C;h1 align=center>Hugo-Theme-Simple | &#x3C;a href="https://hugo.njxzc.top" target="_blank">Demo&#x3C;/a>&#x3C;/h1>
+        <summary type="html"><![CDATA[&#x3C;h1 align=center>Hugo-Theme-Simple | &#x3C;a href="https://hugo.njxzc.top" target="_blank">Demo&#x3C;/a>&#x3C;/h1>
 &#x3C;p align="center">
 &#x3C;img src="https://vip2.loli.io/2023/03/15/9LJ1QX8kKZrRtwA.webp" alt="Simple quote">
 &#x3C;/p>
@@ -471,8 +470,7 @@ The great President Trump, a legend unsurpassed.</p>
         <id>http://localhost:3000/2023/03/chinese-readme-of-hugo-theme-simple</id>
         <link href="http://localhost:3000/2023/03/chinese-readme-of-hugo-theme-simple"/>
         <updated>2023-03-30T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>Glarity Summary</p>
-&#x3C;h1 align=center>Hugo-Theme-Simple | &#x3C;a href="https://hugo.njxzc.top" target="_blank">Demo&#x3C;/a>&#x3C;/h1>
+        <summary type="html"><![CDATA[&#x3C;h1 align=center>Hugo-Theme-Simple | &#x3C;a href="https://hugo.njxzc.top" target="_blank">Demo&#x3C;/a>&#x3C;/h1>
 &#x3C;p align="center">
 &#x3C;img src="https://vip2.loli.io/2023/03/15/9LJ1QX8kKZrRtwA.webp" alt="Simple quote">
 &#x3C;/p>

@@ -37,7 +37,7 @@ export default function Page({ allPostsData, recentPosts, allTags, currentPage }
 	return (
 		<Layout>
 			<Head>
-				<title>{config.siteTitle} - Page {currentPage} </title>
+				<title>{currentPage === 1 ? `${config.siteTitle}` : `Page  ${currentPage}` }</title>
 			</Head>
 			<section className="grid grid-cols-1 lg:grid-cols-12 gap-8 px-5">
 				<div className="hidden lg:block lg:col-span-2" />
