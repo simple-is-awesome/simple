@@ -9,7 +9,7 @@ export default function Raindrop() {
 		async function fetchData() {
 			const res = await fetch('/api/raindrop')
 			const data = await res.json()
-			setraindropData(data.items)
+			setraindropData(data.items.slice(0, 5))
 		}
 		fetchData()
 	}, [])

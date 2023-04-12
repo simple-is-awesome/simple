@@ -5,6 +5,5 @@ import config from 'config'
 export default async function handler(req, res) {
 	const parser = new Parser()
 	const feed = await parser.parseURL(config.raindrop)
-    
 	res.status(200).json(feed)
 }

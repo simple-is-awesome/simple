@@ -1,5 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import readingTime from 'reading-time'
+import AccessTimeIcon from '@mui/icons-material/AccessTime'
+import ArticleIcon from '@mui/icons-material/Article'
+import CalendarTodayIcon from '@mui/icons-material/CalendarToday'
 import ArticleLayout from 'components/ArticleLayout'
 import Date from 'components/Date'
 import ArticleToc from 'components/ArticleToc'
@@ -8,9 +12,10 @@ import Backbutton from 'components/Backbutton'
 import Comment from 'components/Comment'
 import ScrollToTop from 'components/ScrollToTop'
 import { getAllPostMetadata, getPostDataByFileName } from 'lib/posts'
+import config from 'config'
 
 
-export default function Post({ postData, params }) { 
+export default function Post({ postData, params,stats}) { 
 	return (
 		<ArticleLayout>
 			{/* 标题 */}
@@ -32,9 +37,16 @@ export default function Post({ postData, params }) {
 						{/* 文章内容 */}
 						<article className="col-span-5 md:col-span-4 leading-relaxed tracking-wide">
 							<h1 className="text-3xl font-semibold text-center my-3">{postData.title}</h1>
-							<div className="text-right text-xl my-3">
-								<span className="text-gray-500">Posted on</span>{' '}
-								<Date dateString={postData.date} />
+							<div className="text-right text-base my-3">
+								<ArticleIcon />{' '}{stats.words} words
+								<span className="mx-2">|</span>
+								<AccessTimeIcon />{' '}{Math.ceil(stats.minutes)} min
+								<span className="mx-2">|</span>
+								<CalendarTodayIcon />{' '}<Date dateString={postData.date} format='YYYY-M-D' />
+								<span className="mx-2">|</span>
+								<a href={`${config.githubRepo}/edit/main/posts/${encodeURIComponent(postData.filename)}`} className='hover:text-blue-800' target='_blank'>
+									Edit This Page
+								</a>
 							</div>
 							<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 							<div className="my-3">
@@ -87,10 +99,13 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
 	const postData = await getPostDataByFileName(params.year, params.month, params.slug)
+	const contentHtml = postData.contentHtml
+	const stats = readingTime(contentHtml)
 	return {
 		props: {
 			postData,
-			params
+			params,
+			stats,
 		},
 	}
 }
