@@ -73,7 +73,7 @@ export default function Post({ postData, params,stats}) {
 						</article>
 
 						{/* 文章目录 */}
-						<div className="hidden md:hidden lg:col-span-1">
+						<div className="hidden md:block">
 							<ArticleToc contentMarkdown={postData.contentMarkdown} showtoc={postData.showtoc} />
 						</div>
 					</div>
