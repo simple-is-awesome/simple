@@ -7,9 +7,11 @@ export default function CommentForm({quote, setQuote, setUpdateList,parentCommen
 	const formRef = useRef()
 	const turnstileRef = useRef()
 	const [emailError, setEmailError] = useState('')
+	const [buttonText, setButtonText] = useState('Submit')
 
 	const handleSubmit = async (e) => {
 		e.preventDefault()
+		setButtonText('Submitting...')
 		const formData = new FormData(formRef.current)
 		const username = formData.get('username')
 		const email = formData.get('email')
@@ -39,12 +41,15 @@ export default function CommentForm({quote, setQuote, setUpdateList,parentCommen
 			setQuote('')
 			setUpdateList((prev) => !prev)
 			setParentCommentId(null)
+			setButtonText('Submit')
 		} else if (res.status === 403) {
-			turnstileRef.current.reset()
 			alert('请完成人机验证')
-		} else {
 			turnstileRef.current.reset()
+			setButtonText('Submit')
+		} else {
 			alert('留言出现了一些错误，请稍后再试')
+			turnstileRef.current.reset()
+			setButtonText('Submit')
 		}
 	}
 
@@ -112,7 +117,7 @@ export default function CommentForm({quote, setQuote, setUpdateList,parentCommen
 				<button
 			  type="submit"
 			  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-			  Submit
+			  {buttonText}
 				</button>
 		  </form>
 		</>
