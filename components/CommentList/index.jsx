@@ -50,7 +50,7 @@ export default function CommentList({ quoteComment, updateList}) {
 								</div>
 								<div className="flex justify-end items-center space-x-2">
 									<small><Date dateString={comment.created_at} format="h:mm A M/D/YYYY" /></small>
-									<button className="text-blue-500 hover:text-blue-700" onClick={() => quoteComment(comment)}>
+									<button className="text-blue-500 hover:text-blue-700" onClick={() => quoteComment(comment,comment.id)}>
 										Quote
 									</button>
 								</div>
