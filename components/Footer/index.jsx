@@ -13,7 +13,7 @@ export default function Footer() {
 				width={100}
 				height={64}
 				alt="Written By Human Not By AI Badge black"
-				className="ml-2"
+				className="hidden md:block ml-2"
 			/>
 		</div>
 	)
