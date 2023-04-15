@@ -1,6 +1,4 @@
-import config from 'config'
-
-export default {
-	siteUrl: config.baseURL,
+module.exports = {
+	siteUrl: process.env.SITE_URL,
 	generateRobotsTxt: true,
 }
