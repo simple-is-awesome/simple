@@ -1,6 +1,6 @@
 import config from 'config'
 
-module.exports = {
+export default {
 	siteUrl: config.baseURL,
 	generateRobotsTxt: true,
 }
