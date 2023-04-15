@@ -18,6 +18,7 @@ export default withBundleAnalyzer(
 	withMDX({
 		pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
 		reactStrictMode: true,
+		output: 'standalone',
 		webpack: (config) => {
 			config.resolve.fallback = { fs: false }
 			return config
