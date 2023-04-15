@@ -22,4 +22,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: jaya2021/simple-blog-njxzc:${{ github.sha }}
+          tags: |
+            jaya2021/simple-blog-njxzc:${{ github.sha }}
+            jaya2021/simple-blog-njxzc:latest
