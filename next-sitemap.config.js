@@ -1,4 +1,6 @@
+import config from 'config'
+
 module.exports = {
-	siteUrl: 'https://demo.njxzc.top',
+	siteUrl: config.baseURL,
 	generateRobotsTxt: true,
 }
