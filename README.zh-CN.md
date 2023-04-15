@@ -41,3 +41,17 @@
 - 支持夜色模式
 
 ## 使用说明
+
+```bash
+mkdir simple_blog
+
+cd simple_blog
+
+curl -fsSL https://raw.githubusercontent.com/simple-is-awesome/simple/main/docker-compose.yml
+
+curl -fsSL https://raw.githubusercontent.com/simple-is-awesome/simple/main/.env.example
+
+mv .env.example .env
+
+docker compose up -d
+```
