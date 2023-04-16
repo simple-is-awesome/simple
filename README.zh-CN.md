@@ -80,12 +80,10 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 mkdir simple_blog
 # 进入文件夹
 cd simple_blog
-# 下载docker-compose.yml文件
-curl -fsSL https://raw.githubusercontent.com/simple-is-awesome/simple/main/docker-compose.yml
-# 下载.env.example文件
-curl -fsSL https://raw.githubusercontent.com/simple-is-awesome/simple/main/.env.example
-# 将.env.example文件重命名为.env文件
-mv .env.example .env
+# 下载docker-compose.yml文件，指定输出文件名
+curl -fsSL https://raw.githubusercontent.com/simple-is-awesome/simple/main/docker-compose.yml -o docker-compose.yml
+# 下载.env.example文件，指定输出文件名
+curl -fsSL https://raw.githubusercontent.com/simple-is-awesome/simple/main/.env.example -o .env
 
 # 编辑.env文件的内容，填写环境变量
 
