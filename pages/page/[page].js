@@ -6,11 +6,10 @@ import Date from 'components/Date'
 import RightSidebar from 'components/RightSidebar'
 import Pagination from 'components/Pagination'
 import { getSortedPostsData, getAllTags } from 'lib/posts'
-import config from 'config'
 
 export default function Page({ allPostsData, recentPosts, allTags, currentPage }) {
 	const router = useRouter()
-	const postsPerPage = config.postsPerPage
+	const postsPerPage = process.env.NEXT_PUBLIC_POSTS_PERPAGE
 	const startIndex = (currentPage - 1) * postsPerPage
 	const endIndex = startIndex + postsPerPage
 	const postsToRender = allPostsData.slice(startIndex, endIndex)
@@ -37,7 +36,7 @@ export default function Page({ allPostsData, recentPosts, allTags, currentPage }
 	return (
 		<Layout>
 			<Head>
-				<title>{currentPage === 1 ? `${config.siteTitle}` : `Page  ${currentPage}` }</title>
+				<title>{currentPage === 1 ? `${process.env.NEXT_PUBLIC_SITE_TITLE}` : `Page  ${currentPage}` }</title>
 			</Head>
 			<section className="grid grid-cols-1 lg:grid-cols-12 gap-8 px-5">
 				<div className="hidden lg:block lg:col-span-2" />
@@ -90,7 +89,7 @@ export async function getStaticProps({ params }) {
   
 export async function getStaticPaths() {
 	const allPostsData = getSortedPostsData()
-	const totalPages = Math.ceil(allPostsData.length / config.postsPerPage)
+	const totalPages = Math.ceil(allPostsData.length / process.env.NEXT_PUBLIC_POSTS_PERPAGE)
   
 	const paths = Array.from({ length: totalPages }, (_, i) => ({
 		params: { page: (i + 1).toString() },

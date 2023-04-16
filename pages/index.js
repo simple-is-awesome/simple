@@ -5,17 +5,16 @@ import Date from 'components/Date'
 import RightSidebar from 'components/RightSidebar'
 import { getSortedPostsData, getAllTags } from 'lib/posts'
 import generateRSSFeed from 'lib/generateRSSFeed'
-import config from 'config'
 
 export default function Home({ allPostsData, recentPosts, allTags }) {
-	const totalPages = Math.ceil(allPostsData.length / config.postsPerPage)
-	const postsToRender = allPostsData.slice(0, config.postsPerPage)
+	const totalPages = Math.ceil(allPostsData.length / process.env.NEXT_PUBLIC_POSTS_PERPAGE)
+	const postsToRender = allPostsData.slice(0, process.env.NEXT_PUBLIC_POSTS_PERPAGE)
 
 	return (
 		<Layout>
 			{/* 标题 */}
 			<Head>
-				<title>{config.siteTitle}</title>
+				<title>{process.env.NEXT_PUBLIC_SITE_TITLE}</title>
 			</Head>
 
 			{/* 首页 */}
@@ -47,7 +46,7 @@ export default function Home({ allPostsData, recentPosts, allTags }) {
 						</Link>
 					</div>
 				</div>
-				<div className="hidden lg:block lg:col-span-3">
+				<div className="hidden xl:block xl:col-span-3">
 					<RightSidebar recentPosts={recentPosts} allTags={allTags} />
 				</div>
 			</section>

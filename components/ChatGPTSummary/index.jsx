@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
-import config from 'config'
 
 // chatgpt总结组件
 export default function ChatGPTSummary({ contentMarkdown, params, tags }) {
@@ -34,7 +33,7 @@ export default function ChatGPTSummary({ contentMarkdown, params, tags }) {
 			})
 	}
 
-	const copyText = `标签：${formattedTags}\n总结: ${summary}\nvia: ${config.baseURL}/${params.year}/${params.month}/${params.slug}`
+	const copyText = `标签：${formattedTags}\n总结: ${summary}\nvia: ${process.env.NEXT_PUBLIC_SITE_URL}/${params.year}/${params.month}/${params.slug}`
 
 	return (
 		<div className="border border-gray-300 rounded relative">
@@ -44,7 +43,7 @@ export default function ChatGPTSummary({ contentMarkdown, params, tags }) {
 					<div className='bg-white rounded-xl shadow-md p-4 hover:bg-gray-100 transition cursor-copy border'>
 						<p className="break-words max-w-full">标签：{formattedTags}</p>
 						<p className="break-words max-w-full">总结: {summary}</p>
-						<p className="break-words max-w-full">via: {config.baseURL}/{params.year}/{params.month}/{params.slug} </p>
+						<p className="break-words max-w-full">via: {process.env.NEXT_PUBLIC_SITE_URL}/{params.year}/{params.month}/{params.slug} </p>
 					</div>
 				) : (
 					<p className="break-words max-w-full text-center">{isFetching ? 'ChatGPT正在为你总结信息，请稍等...' : '点击下方按钮生成本文摘要'}</p>

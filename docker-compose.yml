@@ -7,5 +7,4 @@ services:
       - '3000:3000'
     volumes:
       - './posts:/app/posts/'
-      - './config.js:/app/config.js'
     restart: always

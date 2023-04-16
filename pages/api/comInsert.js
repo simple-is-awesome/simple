@@ -1,6 +1,5 @@
 import supabase from 'utils/supabase'
 import nodemailer from 'nodemailer'
-import config from 'config'
 
 async function getEmailsFromParentComments(commentId) {
 	const { data, error } = await supabase
@@ -19,12 +18,12 @@ async function getEmailsFromParentComments(commentId) {
   
 // Configure Nodemailer
 const transporter = nodemailer.createTransport({
-	host: process.env.Email_Host,
-	port: process.env.Email_Port,
-	secure: process.env.Email_Secure,
+	host: process.env.EMAIL_HOST,
+	port: process.env.EMAIL_PORT,
+	secure: process.env.EMAIL_SECURE,
 	auth: {
-		user: process.env.Email_UserName,
-		pass: process.env.Email_Password,
+		user: process.env.EMAIL_USERNAME,
+		pass: process.env.EMAIL_PASSWORD,
 	},
 })
 
@@ -71,9 +70,9 @@ export default async function handler(req, res) {
 		for (const parentCommentEmail of parentCommentEmails) {
 		  try {
 				await transporter.sendMail({
-			  from: process.env.Email_UserName, // 发件人地址
+			  from: process.env.EMAIL_USERNAME, // 发件人地址
 			  to: parentCommentEmail, // 收件人地址
-			  subject: `New reply to your comment in ${config.siteTitle}`, // 主题
+			  subject: `New reply to your comment in ${process.env.NEXT_PUBLIC_SITE_TITLE}`, // 主题
 			  text: `${username} replied to your comment: ${processedContent}. Please visit ${cleanUrl} to view it.`, // 纯文本内容
 			  html: `<p>${username} replied to your comment: ${processedContent}. <br/> Please visit <a href="${cleanUrl}">${cleanUrl}</a> to view it.</p>`, // HTML内容
 				})

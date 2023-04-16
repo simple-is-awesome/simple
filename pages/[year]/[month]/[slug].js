@@ -12,7 +12,6 @@ import Backbutton from 'components/Backbutton'
 import Comment from 'components/Comment'
 import ScrollToTop from 'components/ScrollToTop'
 import { getAllPostMetadata, getPostDataByFileName } from 'lib/posts'
-import config from 'config'
 
 
 export default function Post({ postData, params,stats}) { 
@@ -35,7 +34,7 @@ export default function Post({ postData, params,stats}) {
 				<div className="col-span-5 mx-auto md:mx-10 order-2 md:order-2 p-4">
 					<div className="grid grid-cols-5 gap-4">
 						{/* 文章内容 */}
-						<article className="col-span-5 md:col-span-4 leading-relaxed tracking-wide">
+						<article className="col-span-5 md:col-span-4 leading-relaxed tracking-wide px-4 md:px-0">
 							<h1 className="text-3xl font-semibold text-center my-3">{postData.title}</h1>
 							<div className="flex flex-wrap text-base my-3">
 								<div className="text-right flex-1">
@@ -47,9 +46,9 @@ export default function Post({ postData, params,stats}) {
 								<div className="text-right flex-1">
 									<CalendarTodayIcon />{' '}<Date dateString={postData.date} format='YYYY-M-D' />
 								</div>
-								<div className="text-right flex-1 hidden md:block">
-									<a href={`${config.githubRepo}/edit/main/posts/${encodeURIComponent(postData.filename)}`} className='hover:text-blue-800' target='_blank'>
-										Edit This Page
+								<div className="text-right flex-1 hidden lg:block">
+									<a href={`${process.env.NEXT_PUBLIC_GITHUB_REPO}/edit/main/posts/${encodeURIComponent(postData.filename)}`} className='hover:text-blue-800' target='_blank'>
+							Edit This Page
 									</a>
 								</div>
 							</div>
@@ -73,7 +72,7 @@ export default function Post({ postData, params,stats}) {
 						</article>
 
 						{/* 文章目录 */}
-						<div className="hidden md:block">
+						<div className="hidden xl:block">
 							<ArticleToc contentMarkdown={postData.contentMarkdown} showtoc={postData.showtoc} />
 						</div>
 					</div>

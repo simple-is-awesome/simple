@@ -1,8 +1,6 @@
 import Head from 'next/head'
-import GithubCorner from 'react-github-corner'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
-import config from 'config'
 
 // 文章页布局
 export default function ArticleLayout({ children,handleResetSearch}) {
@@ -19,8 +17,6 @@ export default function ArticleLayout({ children,handleResetSearch}) {
 			</main>
 
 			<Footer />
-
-			<GithubCorner href={config.githubRepo} className='hidden md:block'/>
 		</div>
 	)
 }

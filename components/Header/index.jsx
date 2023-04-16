@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
 import Search from 'components/Search'
-import config from 'config'
+import Navbar from 'components/Navbar'
 
 // 顶部导航栏组件
 export default function Header() {
@@ -28,35 +28,17 @@ export default function Header() {
 	}
 
 	return (
-		<header className="flex justify-between items-center border-b border-gray-30 py-3">
-			<div className="grid grid-cols-12 gap-8 px-5 w-full">
-				<div className="col-span-2">
+		<header className="flex justify-between items-center border-b border-gray-30 py-3 px-5">
+			<div className="flex-grow">
+				<div className="hidden md:block text-2xl pl-6">
+					<Link href="/">{process.env.NEXT_PUBLIC_SITE_TITLE}</Link>
 				</div>
-				<div className="hidden lg:col-span-7 lg:flex justify-between space-x-4">
-					<div className="text-2xl">
-						<Link href="/">{config.siteTitle}</Link>
-					</div>
-					<Search />
-				</div>
-				<div className="col-span-3">
-					<nav>
-						<ul className="flex items-center space-x-4 font-medium">
-							<li>
-								<Link href="/">Home</Link>
-							</li>
-							<li>
-								<Link href="/about">About</Link>
-							</li>
-							<li>
-								<Link href="/gallery">Gallery</Link>
-							</li>
-							<li>
-								<Link href="/rss.xml">RSS</Link>
-							</li>
-							<li>{RenderThemeChanger()}</li>
-						</ul>
-					</nav>
-				</div>
+			</div>
+			<div className="hidden lg:flex space-x-4">
+				<Search />
+			</div>
+			<div className="flex-shrink-0 mx-2">
+				<Navbar RenderThemeChanger={RenderThemeChanger} />
 			</div>
 		</header>
 	)
