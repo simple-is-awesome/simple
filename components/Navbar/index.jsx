@@ -20,6 +20,7 @@ export default function Navbar({ RenderThemeChanger }) {
 	}
 
 	const router = useRouter()
+	const currentUrl = router.asPath
 	const activeLocale = router.locale
 
 	const sortedLocales = Object.entries(supportedLocales).sort(([localeA], [localeB]) => {
@@ -81,7 +82,7 @@ export default function Navbar({ RenderThemeChanger }) {
 								onMouseLeave={() => setTranslateMenuVisible(false)}>
 								{sortedLocales.map(([locale, displayName]) => (
 									<div key={locale} className={`block px-4 py-2 text-sm ${activeLocale !== locale ? 'hover:bg-gray-100 dark:hover:bg-gray-700' : ''}`}>
-										{locale !== activeLocale ? <Link href='/' locale={locale}>{displayName}</Link> : displayName}
+										{locale !== activeLocale ? <Link href={currentUrl} locale={locale}>{displayName}</Link> : displayName}
 									</div>
 								))}
 							</div>
