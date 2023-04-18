@@ -1,4 +1,9 @@
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+<p align="center">
+<img src="https://vip2.loli.io/2023/04/17/AYctDuH2fbriGPQ.webp" alt="RSSHub" width="100">
+</p>
+
+<h1 align="center">Simple</h1>
+
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 ![GitHub Repo stars](https://img.shields.io/github/stars/simple-is-awesome/simple?style=social)
 ![MIT](https://img.shields.io/github/license/simple-is-awesome/simple?style=plastic)
