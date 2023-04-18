@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/simple-is-awesome/simple/compare/v3.0.0...v3.0.1) (2023-04-18)
+
+
+### Bug Fixes
+
+* :bug: fix navbar responsive layout && add i18n support ([0e31be0](https://github.com/simple-is-awesome/simple/commit/0e31be00736044cc453122dd0244cf7f712541d2))
+
 # [3.0.0](https://github.com/simple-is-awesome/simple/compare/v2.0.0...v3.0.0) (2023-04-01)
 
 
