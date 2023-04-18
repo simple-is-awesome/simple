@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://demo.njxzc.top
+
+# Sitemaps
+Sitemap: https://demo.njxzc.top/sitemap.xml

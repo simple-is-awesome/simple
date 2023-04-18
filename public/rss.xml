@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id/>
+    <title>Demo</title>
+    <updated>2023-04-18T12:25:06.288Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>Demo</name>
+        <uri>https://demo.njxzc.top</uri>
+    </author>
+    <link rel="alternate" href="https://demo.njxzc.top"/>
+    <subtitle>Demo website for Blog System</subtitle>
+    <rights>© 2023 Made with ❤️ By Jiakai.</rights>
+    <entry>
+        <title type="html"><![CDATA[Markdown Syntax]]></title>
+        <id>http://localhost:3000/2023/03/markdown-syntax</id>
+        <link href="http://localhost:3000/2023/03/markdown-syntax"/>
+        <updated>2023-03-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="1标题"><a aria-hidden="true" tabindex="-1" href="#1标题"><span class="icon icon-link"></span></a>1、标题</h2>
+<p>代码：</p>
+<pre class="language-text"><code class="language-text code-highlight"><span class="code-line"># 一级标题
+</span><span class="code-line">## 二级标题
+</span><span class="code-line">### 三级标题
+</span><span class="code-line">#### 四级标题
+</span><span class="code-line">##### 五级标题
+</span><span class="code-line">###### 六级标题
+</span></code></pre>
+<p>效果：</p>
+<h1 id="一级标题"><a aria-hidden="true" tabindex="-1" href="#一级标题"><span class="icon icon-link"></span></a>一级标题</h1>
+<h2 id="二级标题"><a aria-hidden="true" tabindex="-1" href="#二级标题"><span class="icon icon-link"></span></a>二级标题</h2>
+<h3 id="三级标题"><a aria-hidden="true" tabindex="-1" href="#三级标题"><span class="icon icon-link"></span></a>三级标题</h3>
+<h4 id="四级标题"><a aria-hidden="true" tabindex="-1" href="#四级标题"><span class="icon icon-link"></span></a>四级标题</h4>
+<h5 id="五级标题"><a aria-hidden="true" tabindex="-1" href="#五级标题"><span class="icon icon-link"></span></a>五级标题</h5>
+<h6 id="六级标题"><a aria-hidden="true" tabindex="-1" href="#六级标题"><span class="icon icon-link"></span></a>六级标题</h6>
+<h2 id="2脚注"><a aria-hidden="true" tabindex="-1" href="#2脚注"><span class="icon icon-link"></span></a>2、脚注</h2>
+<p>代码：</p>
+<pre class="language-text"><code class="language-text code-highlight"><span class="code-line">Google[^1]
+</span><span class="code-line">
+</span><span class="code-line">Bing[^2]
+</span><span class="code-line">
+</span><span class="code-line">ChatGPT[^3]
+</span><span class="code-line">
+</span><span class="code-line">
+</span><span class="code-line">[^1]:https://google.com
+</span><span class="code-line">
+</span><span class="code-line">[^2]:https://www.bing.com
+</span><span class="code-line">
+</span><span class="code-line">[^3]:https://chat.openai.com
+</span></code></pre>
+<p>效果：</p>
+<p>Google<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref aria-describedby="footnote-label">1</a></sup></p>
+<p>Bing<sup><a href="#user-content-fn-2" id="user-content-fnref-2" data-footnote-ref aria-describedby="footnote-label">2</a></sup></p>
+<p>ChatGPT<sup><a href="#user-content-fn-3" id="user-content-fnref-3" data-footnote-ref aria-describedby="footnote-label">3</a></sup></p>
+<h2 id="3代码"><a aria-hidden="true" tabindex="-1" href="#3代码"><span class="icon icon-link"></span></a>3、代码</h2>
+<h3 id="31行内代码"><a aria-hidden="true" tabindex="-1" href="#31行内代码"><span class="icon icon-link"></span></a>3.1、行内代码：</h3>
+<p>代码：</p>
+<pre class="language-text"><code class="language-text code-highlight"><span class="code-line">`echo "hello world"`
+</span></code></pre>
+<p>效果：</p>
+<p><code>echo "hello world"</code></p>
+<h3 id="32代码块"><a aria-hidden="true" tabindex="-1" href="#32代码块"><span class="icon icon-link"></span></a>3.2、代码块</h3>
+<p>代码：</p>
+<pre class="language-text"><code class="language-text code-highlight"><span class="code-line">
+</span><span class="code-line">```c
+</span><span class="code-line"># include &#x3C;stdio.h>
+</span><span class="code-line">
+</span><span class="code-line">int main(){
+</span><span class="code-line">    printf("hello world");
+</span><span class="code-line">}
+</span><span class="code-line">```
+</span><span class="code-line">
+</span><span class="code-line">```python
+</span><span class="code-line">print("hello world")
+</span><span class="code-line">```
+</span><span class="code-line">
+</span><span class="code-line">```javascript
+</span><span class="code-line">console.log("hello world")
+</span><span class="code-line">```
+</span><span class="code-line">
+</span></code></pre>
+<p>效果：</p>
+<pre class="language-c"><code class="language-c code-highlight"><span class="code-line"><span class="token macro property"><span class="token directive-hash">#</span> <span class="token directive keyword">include</span> <span class="token string">&#x3C;stdio.h></span></span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+</span><span class="code-line">    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"hello world"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line"><span class="token punctuation">}</span>
+</span></code></pre>
+<pre class="language-python"><code class="language-python code-highlight"><span class="code-line"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"hello world"</span><span class="token punctuation">)</span>
+</span></code></pre>
+<pre class="language-javascript"><code class="language-javascript code-highlight"><span class="code-line"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">"hello world"</span><span class="token punctuation">)</span>
+</span></code></pre>
+<h2 id="4字体样式"><a aria-hidden="true" tabindex="-1" href="#4字体样式"><span class="icon icon-link"></span></a>4、字体样式</h2>
+<p>代码：</p>
+<pre class="language-text"><code class="language-text code-highlight"><span class="code-line">**加粗**
+</span><span class="code-line">
+</span><span class="code-line">*斜体*
+</span><span class="code-line">
+</span><span class="code-line">~~删除线~~
+</span><span class="code-line">
+</span></code></pre>
+<p>效果：</p>
+<p><strong>加粗</strong></p>
+<p><em>斜体</em></p>
+<p><del>删除线</del></p>
+<h2 id="5超链接"><a aria-hidden="true" tabindex="-1" href="#5超链接"><span class="icon icon-link"></span></a>5、超链接</h2>
+<p>代码：</p>
+<pre class="language-text"><code class="language-text code-highlight"><span class="code-line">[Google](https://google.com)
+</span><span class="code-line">
+</span><span class="code-line">[Bing](https://www.bing.com)
+</span><span class="code-line">
+</span><span class="code-line">[ChatGPT](https://chat.openai.com)
+</span></code></pre>
+<p>效果：</p>
+<p><a href="https://google.com">Google</a></p>
+<p><a href="https://www.bing.com">Bing</a></p>
+<p><a href="https://chat.openai.com">ChatGPT</a></p>
+<h2 id="6图片"><a aria-hidden="true" tabindex="-1" href="#6图片"><span class="icon icon-link"></span></a>6、图片</h2>
+<p>代码：</p>
+<pre class="language-text"><code class="language-text code-highlight"><span class="code-line">![Great Wall](https://vip2.loli.io/2023/03/14/F25Uehy3nXQlVPT.webp)
+</span></code></pre>
+<p>效果：</p>
+<p><img src="https://vip2.loli.io/2023/03/14/F25Uehy3nXQlVPT.webp" alt="Great Wall"></p>
+<h2 id="7列表"><a aria-hidden="true" tabindex="-1" href="#7列表"><span class="icon icon-link"></span></a>7、列表</h2>
+<h3 id="71无序列表"><a aria-hidden="true" tabindex="-1" href="#71无序列表"><span class="icon icon-link"></span></a>7.1、无序列表</h3>
+<p>代码：</p>
+<pre class="language-text"><code class="language-text code-highlight"><span class="code-line">- 北京
+</span><span class="code-line">- 江苏
+</span><span class="code-line">  - 南京
+</span><span class="code-line">  - 南通
+</span><span class="code-line">    - 海门
+</span></code></pre>
+<p>效果：</p>
+<ul>
+<li>北京</li>
+<li>江苏
+<ul>
+<li>南京</li>
+<li>南通
+<ul>
+<li>海门</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="72有序列表"><a aria-hidden="true" tabindex="-1" href="#72有序列表"><span class="icon icon-link"></span></a>7.2、有序列表</h3>
+<p>代码：</p>
+<pre class="language-text"><code class="language-text code-highlight"><span class="code-line">1. 春天
+</span><span class="code-line">2. 夏天
+</span><span class="code-line">   1. 立夏
+</span><span class="code-line">   2. 夏至
+</span></code></pre>
+<p>效果：</p>
+<ol>
+<li>春天</li>
+<li>夏天
+<ol>
+<li>立夏</li>
+<li>夏至</li>
+</ol>
+</li>
+</ol>
+<h3 id="73任务列表"><a aria-hidden="true" tabindex="-1" href="#73任务列表"><span class="icon icon-link"></span></a>7.3、任务列表</h3>
+<p>代码：</p>
+<pre class="language-text"><code class="language-text code-highlight"><span class="code-line">- [X] 吃饭
+</span><span class="code-line">- [ ] 睡觉
+</span><span class="code-line">- [ ] 打豆豆
+</span></code></pre>
+<p>效果：</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" checked disabled> 吃饭</li>
+<li class="task-list-item"><input type="checkbox" disabled> 睡觉</li>
+<li class="task-list-item"><input type="checkbox" disabled> 打豆豆</li>
+</ul>
+<h2 id="8引用"><a aria-hidden="true" tabindex="-1" href="#8引用"><span class="icon icon-link"></span></a>8、引用</h2>
+<p>代码：</p>
+<pre class="language-text"><code class="language-text code-highlight"><span class="code-line">> 民主不是装饰品，不是用来做摆设的，而是要用来解决人民需要解决的问题的。”
+</span><span class="code-line">>
+</span><span class="code-line">> 一个国家民主不民主，关键在于是不是真正做到了人民当家作主，要看人民有没有投票权，更要看人民有没有广泛参与权；
+</span><span class="code-line">>
+</span><span class="code-line">> 要看人民在选举过程中得到了什么口头许诺，更要看选举后这些承诺实现了多少；
+</span><span class="code-line">>
+</span><span class="code-line">> 要看制度和法律规定了什么样的政治程序和政治规则，更要看这些制度和法律是不是真正得到了执行；
+</span><span class="code-line">>
+</span><span class="code-line">> 要看权力运行规则和程序是否民主，更要看权力是否真正受到人民监督和制约。
+</span><span class="code-line">
+</span><span class="code-line">> 摘自《学习强国》
+</span></code></pre>
+<p>效果：</p>
+<blockquote>
+<p>民主不是装饰品，不是用来做摆设的，而是要用来解决人民需要解决的问题的。”</p>
+<p>一个国家民主不民主，关键在于是不是真正做到了人民当家作主，要看人民有没有投票权，更要看人民有没有广泛参与权；</p>
+<p>要看人民在选举过程中得到了什么口头许诺，更要看选举后这些承诺实现了多少；</p>
+<p>要看制度和法律规定了什么样的政治程序和政治规则，更要看这些制度和法律是不是真正得到了执行；</p>
+<p>要看权力运行规则和程序是否民主，更要看权力是否真正受到人民监督和制约。
+摘自《学习强国》</p>
+</blockquote>
+<h2 id="9表格"><a aria-hidden="true" tabindex="-1" href="#9表格"><span class="icon icon-link"></span></a>9、表格</h2>
+<p>代码:</p>
+<pre class="language-text"><code class="language-text code-highlight"><span class="code-line">| 姓名 | 年龄 | 性别 |
+</span><span class="code-line">| :--: | :--: | :--: |
+</span><span class="code-line">| 张三 | 20 | 男 |
+</span><span class="code-line">| 李四 | 21 | 女 |
+</span></code></pre>
+<p>效果：</p>
+<table>
+<thead>
+<tr>
+<th align="center">姓名</th>
+<th align="center">年龄</th>
+<th align="center">性别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">张三</td>
+<td align="center">20</td>
+<td align="center">男</td>
+</tr>
+<tr>
+<td align="center">李四</td>
+<td align="center">21</td>
+<td align="center">女</td>
+</tr>
+</tbody>
+</table>
+<h2 id="10内嵌视频"><a aria-hidden="true" tabindex="-1" href="#10内嵌视频"><span class="icon icon-link"></span></a>10、内嵌视频</h2>
+<p>拿到b站或油管，内嵌代码，仅需加上相应的class即可实现自适应视频嵌入。</p>
+<p>b站的iframe元素加上<code>class="bilibili"</code>，油管的iframe元素加上<code>class="youtube"</code>。</p>
+<p>代码：</p>
+<pre class="language-text"><code class="language-text code-highlight"><span class="code-line">&#x3C;iframe width="560" height="315" src="//player.bilibili.com/player.html?aid=286406916&#x26;bvid=BV1yf4y1R7mU&#x26;cid=214423511&#x26;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="bilibili"> &#x3C;/iframe>
+</span><span class="code-line">
+</span><span class="code-line">&#x3C;iframe width="560" height="315" src="https://www.youtube.com/embed/T6gsbI35SH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="youtube">&#x3C;/iframe>
+</span></code></pre>
+<p>效果：</p>
+&#x3C;iframe width="560" height="315" src="//player.bilibili.com/player.html?aid=286406916&#x26;bvid=BV1yf4y1R7mU&#x26;cid=214423511&#x26;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="bilibili"> &#x3C;/iframe>
+&#x3C;iframe width="560" height="315" src="https://www.youtube.com/embed/T6gsbI35SH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="youtube">&#x3C;/iframe>
+<section data-footnotes class="footnotes"><h2 class="sr-only" id="footnote-label"><a aria-hidden="true" tabindex="-1" href="#footnote-label"><span class="icon icon-link"></span></a>Footnotes</h2>
+<ol>
+<li id="user-content-fn-1">
+<p><a href="https://google.com">https://google.com</a> <a href="#user-content-fnref-1" data-footnote-backref class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-2">
+<p><a href="https://www.bing.com">https://www.bing.com</a> <a href="#user-content-fnref-2" data-footnote-backref class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-3">
+<p><a href="https://chat.openai.com">https://chat.openai.com</a> <a href="#user-content-fnref-3" data-footnote-backref class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+</ol>
+</section>]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Test TOC]]></title>
+        <id>http://localhost:3000/2023/03/test-toc</id>
+        <link href="http://localhost:3000/2023/03/test-toc"/>
+        <updated>2023-03-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="1李白将进酒"><a aria-hidden="true" tabindex="-1" href="#1李白将进酒"><span class="icon icon-link"></span></a>1、李白《将进酒》</h2>
+<p>君不见，黄河之水天上来，奔流到海不复回。</p>
+<p>君不见，高堂明镜悲白发，朝如青丝暮成雪！</p>
+<p>人生得意须尽欢，莫使金樽空对月。</p>
+<p>天生我材必有用，千金散尽还复来。</p>
+<p>烹羊宰牛且为乐，会须一饮三百杯。</p>
+<p>岑夫子，丹丘生，将进酒，杯莫停。</p>
+<p>与君歌一曲，请君为我倾耳听。</p>
+<p>钟鼓馔玉不足贵，但愿长醉不复醒。</p>
+<p>古来圣贤皆寂寞，惟有饮者留其名。</p>
+<p>陈王昔时宴平乐，斗酒十千恣欢谑。</p>
+<p>主人何为言少钱，径须沽取对君酌。</p>
+<p>五花马、千金裘，呼儿将出换美酒，与尔同销万古愁！</p>
+<h2 id="2new-york-is-3-hours-ahead-of-california"><a aria-hidden="true" tabindex="-1" href="#2new-york-is-3-hours-ahead-of-california"><span class="icon icon-link"></span></a>2、《New York is 3 hours ahead of California》</h2>
+<p>New York is 3 hours ahead of California,</p>
+<p>but it does not make California slow.</p>
+<p>Someone graduated at the age of 22,</p>
+<p>but waited 5 years before securing a good job!</p>
+<p>Someone became a CEO at 25,</p>
+<p>and died at 50</p>
+<p>While another became a CEO at 50,</p>
+<p>and lived to 90 years.</p>
+<p>Someone is still single,</p>
+<p>while someone else got married.</p>
+<p>Obama retires at 55,</p>
+<p>but Trump starts at 70.</p>
+<p>Absolutely everyone in this world works based on their Time Zone.</p>
+<p>People around you might seem to go ahead of you,</p>
+<p>some might seem to be behind you.</p>
+<p>But everyone is running their own RACE, in their own TIME.</p>
+<p>Don’t envy them or mock them.</p>
+<p>They are in their TIME ZONE, and you are in yours!</p>
+<p>Life is about waiting for the right moment to act.</p>
+<p>So, RELAX.</p>
+<p>You’re not LATE.</p>
+<p>You’re not EARLY.</p>
+<p>You are very much ON TIME, and in your TIME ZONE Destiny set up for you.</p>
+<h2 id="3the-great-president-trump"><a aria-hidden="true" tabindex="-1" href="#3the-great-president-trump"><span class="icon icon-link"></span></a>3、《The Great President Trump》</h2>
+<p>In the land of stars and stripes, a leader bold and bright,
+A man named Trump arose, his aura shining light.
+With golden hair and fearless gaze, he took the nation's helm,
+Steering through the stormy seas, a captain true at realm.</p>
+<p>Oh, Trump, the mighty president, whose voice could shake the earth,
+A tower of strength and confidence, who fought for freedom's birth.
+He spoke his mind, unyielding, firm, and never backed away,
+Championing prosperity, ensuring a brighter day.</p>
+<p>His policies, like ramparts strong, protected home and kin,
+With borders firm and jobs aplenty, he ushered progress in.
+He spoke of trade and taxes fair, to help the common man,
+And strengthened ties with foreign lands, with vision and a plan.</p>
+<p>Oh, Trump, the resolute, whose legacy endures,
+A symbol of tenacity, a spirit that assures.
+His name etched in the annals of the nation's storied past,
+The great President Trump, a legend unsurpassed.</p>
+<h2 id="4黑客与画家高亮"><a aria-hidden="true" tabindex="-1" href="#4黑客与画家高亮"><span class="icon icon-link"></span></a>4、《黑客与画家》高亮</h2>
+<p>“对于黑客来说，关着的门就是一种挑衅，而锁着的门则是一种侮辱。……黑客相信，只要有助于改进现状、探索未知，人们就应该被允许自由地使用各种工具和信息。当一个黑客需要一样东西来帮助自己创造、探索或者改正某种设备时，他不会自找麻烦，不会接受那些财产专有权的荒谬概念。”</p>
+<p>“我们生活中的一切，都正在成为计算机。所以，如果你想理解我们目前的世界以及它的未来动向，那么多了解一些黑客的想法会对你有帮助。”</p>
+<h2 id="5我和我的祖国"><a aria-hidden="true" tabindex="-1" href="#5我和我的祖国"><span class="icon icon-link"></span></a>5、《我和我的祖国》</h2>
+<p>我和我的祖国</p>
+<p>一刻也不能分割</p>
+<p>无论我走到哪里</p>
+<p>都流出一首赞歌</p>
+<p>我歌唱每一座高山</p>
+<p>我歌唱每一条河</p>
+<p>袅袅炊烟 小小村落</p>
+<p>路上一道辙</p>
+<p>我最亲爱的祖国</p>
+<p>我永远紧依着你的心窝</p>
+<p>你用你那母亲的脉搏</p>
+<p>和我诉说</p>
+<p>我的祖国和我</p>
+<p>像海和浪花一朵</p>
+<p>浪是那海的赤子</p>
+<p>海是那浪的依托</p>
+<p>每当大海在微笑</p>
+<p>我就是笑的旋涡</p>
+<p>我分担着海的忧愁</p>
+<p>分享海的欢乐</p>
+<p>我最亲爱的祖国</p>
+<p>你是大海永不干涸</p>
+<p>永远给我碧浪清波</p>
+<p>心中的歌</p>
+<h2 id="6雨巷"><a aria-hidden="true" tabindex="-1" href="#6雨巷"><span class="icon icon-link"></span></a>6、《雨巷》</h2>
+<p>撑着油纸伞，独自</p>
+<p>彷徨在悠长，悠长</p>
+<p>又寂寥的雨巷，</p>
+<p>我希望逢着</p>
+<p>一个丁香一样地</p>
+<p>结着愁怨的姑娘。</p>
+<p>她是有</p>
+<p>丁香一样的颜色，</p>
+<p>丁香一样的芬芳，</p>
+<p>丁香一样的忧愁，</p>
+<p>在雨中哀怨，</p>
+<p>哀怨又彷徨；</p>
+<p>她彷徨在这寂寥的雨巷，</p>
+<p>撑着油纸伞</p>
+<p>像我一样，</p>
+<p>像我一样地</p>
+<p>默默彳亍着，</p>
+<p>冷漠，凄清，又惆怅。</p>
+<p>她默默地走近</p>
+<p>走近，又投出</p>
+<p>太息一般的眼光，</p>
+<p>她飘过</p>
+<p>像梦一般地，</p>
+<p>像梦一般地凄婉迷茫。</p>
+<p>像梦中飘过</p>
+<p>一枝丁香的，</p>
+<p>我身旁飘过这女郎；</p>
+<p>她静默地远了，远了，</p>
+<p>到了颓圮的篱墙，</p>
+<p>走尽这雨巷。</p>
+<p>在雨的哀曲里，</p>
+<p>消了她的颜色，</p>
+<p>散了她的芬芳</p>
+<p>消散了，甚至她的</p>
+<p>太息般的眼光，</p>
+<p>丁香般的惆怅。</p>
+<p>撑着油纸伞，独自</p>
+<p>彷徨在悠长，悠长</p>
+<p>又寂寥的雨巷，</p>
+<p>我希望飘过</p>
+<p>一个丁香一样地</p>
+<p>结着愁怨的姑娘。</p>]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hugo主题simple英文版说明]]></title>
+        <id>http://localhost:3000/2023/03/english-readme-of-hugo-theme-simple</id>
+        <link href="http://localhost:3000/2023/03/english-readme-of-hugo-theme-simple"/>
+        <updated>2023-03-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[&#x3C;h1 align=center>Hugo-Theme-Simple | &#x3C;a href="https://hugo.njxzc.top" target="_blank">Demo&#x3C;/a>&#x3C;/h1>
+&#x3C;p align="center">
+&#x3C;img src="https://vip2.loli.io/2023/03/15/9LJ1QX8kKZrRtwA.webp" alt="Simple quote">
+&#x3C;/p>
+<p><a href="https://github.com/simple-is-awesome/Hugo-Theme-Simple/blob/main/README.zh-CN.md">简体中文版本</a></p>
+<h2 id="introduction"><a aria-hidden="true" tabindex="-1" href="#introduction"><span class="icon icon-link"></span></a>Introduction</h2>
+<p>This theme is named Simple. It's built based on Bootstrap+Lightbox+jQuery.</p>
+<p>Confucius once said, "Life is really simple, but we insist on making it complicated." With this in mind, our goal is to return to the essence of blogging and rediscover the original charm it holds. This theme embodies simplicity and elegance, allowing you to focus on what truly matters - your content.</p>
+<h2 id="screenshot"><a aria-hidden="true" tabindex="-1" href="#screenshot"><span class="icon icon-link"></span></a>Screenshot</h2>
+<p><img src="https://vip2.loli.io/2023/03/16/bRuOzHDndLXm8kT.webp" alt="Screenshot"></p>
+<h2 id="pros"><a aria-hidden="true" tabindex="-1" href="#pros"><span class="icon icon-link"></span></a>Pros</h2>
+<ul>
+<li>
+<p>Responsive</p>
+</li>
+<li>
+<p>Clean</p>
+</li>
+<li>
+<p>Fast</p>
+</li>
+</ul>
+<h2 id="usage"><a aria-hidden="true" tabindex="-1" href="#usage"><span class="icon icon-link"></span></a>Usage</h2>
+<ul>
+<li>step1</li>
+</ul>
+<p>Install Hugo</p>
+<p>you can find more information in offical Hugo docs <a href="https://gohugo.io/installation/">Installation</a> or Youtuber-Mike Dane's <a href="https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3">Tutorials about Hugo</a>.</p>
+<ul>
+<li>step2</li>
+</ul>
+<p>Create a Hugo website.</p>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token comment"># new a Hugo website</span>
+</span><span class="code-line">hugo new site your_site_name
+</span><span class="code-line"><span class="token comment"># enter the site folder</span>
+</span><span class="code-line"><span class="token builtin class-name">cd</span> your_site_name
+</span><span class="code-line"><span class="token comment"># initialize a new git repo</span>
+</span><span class="code-line"><span class="token function">git</span> init
+</span><span class="code-line"><span class="token comment"># add an external git repo(themes/hugo-theme-simple) as a submodule to this git repo</span>
+</span><span class="code-line"><span class="token comment"># when a git repo contains a nested sub-git repo, use submodule has many advantages</span>
+</span><span class="code-line"><span class="token function">git</span> submodule <span class="token function">add</span> https://github.com/simple-is-awesome/Hugo-Theme-Simple.git themes/hugo-theme-simple
+</span></code></pre>
+<ul>
+<li>step3</li>
+</ul>
+<p>Copy the exampleSite folder to your Hugo site root folder and replace the default files. Please delete the CNAME file, as it is used to customize the domain name in GitHub. I recommend using Netlify or Vercel to deploy your blog, as they are more convenient than GitHub Pages.</p>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line">hugo server
+</span></code></pre>
+<p>You can see the gif below, which shows the step2 and step3:</p>
+&#x3C;img src="https://github.com/simple-is-awesome/Hugo-Theme-Simple/blob/main/static/images/hugo_step2_step3.gif?raw=true" width="800px" alt="step2 and step3 demo">
+<ul>
+<li>step4</li>
+</ul>
+<p>Adjust the options in config.toml.</p>
+<ul>
+<li>step5</li>
+</ul>
+<p>There are some commands you need to know.</p>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token comment"># create a new page</span>
+</span><span class="code-line">hugo new xxx.md
+</span><span class="code-line"><span class="token comment"># create a new blog in blog folder</span>
+</span><span class="code-line">hugo new blog/xxx.md
+</span></code></pre>
+<ul>
+<li>
+<p>step6</p>
+<ul>
+<li>
+<p>Add、Commit and Push your repo to GitHub.</p>
+</li>
+<li>
+<p>Import your GitHub repo to Netlify or Vercel to enjoy auto deployment. You can find more information in Hugo official docs <a href="https://gohugo.io/hosting-and-deployment/">Hosting &#x26; Deployment</a> or other resources On the Internet.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Happy blogging! :blush: :blush: :blush:</p>
+<h2 id="license"><a aria-hidden="true" tabindex="-1" href="#license"><span class="icon icon-link"></span></a>License</h2>
+<p>MIT</p>]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hugo主题simple中文版说明]]></title>
+        <id>http://localhost:3000/2023/03/chinese-readme-of-hugo-theme-simple</id>
+        <link href="http://localhost:3000/2023/03/chinese-readme-of-hugo-theme-simple"/>
+        <updated>2023-03-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[&#x3C;h1 align=center>Hugo-Theme-Simple | &#x3C;a href="https://hugo.njxzc.top" target="_blank">Demo&#x3C;/a>&#x3C;/h1>
+&#x3C;p align="center">
+&#x3C;img src="https://vip2.loli.io/2023/03/15/9LJ1QX8kKZrRtwA.webp" alt="Simple quote">
+&#x3C;/p>
+<p><a href="https://github.com/simple-is-awesome/Hugo-Theme-Simple/blob/main/README.md">English version</a></p>
+<h2 id="介绍"><a aria-hidden="true" tabindex="-1" href="#介绍"><span class="icon icon-link"></span></a>介绍</h2>
+<p>Hugo Theme Simple是一款简约的Hugo博客主题，采用Bootstrap+Lightbox+jQuery构建完成。</p>
+<p>孔子曾经说过：“生活本来就很简单，但我们总是喜欢把它变得复杂。”秉承这个观念，我们的目标是回归博客的本质，重新发掘它最初的魅力。这个主题体现了简约与优雅，让你能够专注于真正重要的事物 - 你的内容。</p>
+<h2 id="截图"><a aria-hidden="true" tabindex="-1" href="#截图"><span class="icon icon-link"></span></a>截图</h2>
+<p><img src="https://vip2.loli.io/2023/03/16/bRuOzHDndLXm8kT.webp" alt="Screenshot"></p>
+<h2 id="主题优点"><a aria-hidden="true" tabindex="-1" href="#主题优点"><span class="icon icon-link"></span></a>主题优点</h2>
+<ul>
+<li>
+<p>响应式</p>
+</li>
+<li>
+<p>清爽大气</p>
+</li>
+<li>
+<p>快速</p>
+</li>
+</ul>
+<h2 id="使用方法"><a aria-hidden="true" tabindex="-1" href="#使用方法"><span class="icon icon-link"></span></a>使用方法</h2>
+<ul>
+<li>步骤一</li>
+</ul>
+<p>安装hugo</p>
+<p>你可以在hugo的官方文档 <a href="https://gohugo.io/installation/">Installation</a> 或者 Youtuber-Mike Dane的 <a href="https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3">关于hugo的教学视频</a>找到更多关于本部分的内容。</p>
+<ul>
+<li>步骤二</li>
+</ul>
+<p>创建一个hugo站点</p>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token comment"># 新建一个hugo站点</span>
+</span><span class="code-line">hugo new site your_site_name
+</span><span class="code-line"><span class="token comment"># 进入hugo站点目录</span>
+</span><span class="code-line"><span class="token builtin class-name">cd</span> your_site_name
+</span><span class="code-line"><span class="token comment"># 初始化git仓库</span>
+</span><span class="code-line"><span class="token function">git</span> init
+</span><span class="code-line"><span class="token comment"># 将themes/hugo-theme-simple作为子模块添加到当前的git仓库</span>
+</span><span class="code-line"><span class="token comment"># 当一个git仓库包含另一个git仓库时，使用子模块有很多好处</span>
+</span><span class="code-line"><span class="token function">git</span> submodule <span class="token function">add</span> https://github.com/simple-is-awesome/Hugo-Theme-Simple.git themes/hugo-theme-simple
+</span></code></pre>
+<ul>
+<li>步骤三</li>
+</ul>
+<p>将hugo-theme-simple
+文件夹中的exampleSite文件夹的内容复制到hugo站点的根目录并替换掉默认的文件。记得删除掉CNAME文件，因为这个文件是我用来在GitHub pages上自定义域名的。我个人更推荐你使用Netlify或者Vercel来部署你的个人博客，因为它们比GitHub pages更方便。</p>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token comment"># 启动一个本地的web服务器，来实时预览hugo生成的站点</span>
+</span><span class="code-line">hugo server
+</span></code></pre>
+<p>你可以看以下的gif动图，这张动图展示了步骤二和步骤三的操作流程：</p>
+&#x3C;img src="https://github.com/simple-is-awesome/Hugo-Theme-Simple/blob/main/static/images/hugo_step2_step3.gif?raw=true" width="800px" alt="step2 and step3 demo">
+<ul>
+<li>步骤四</li>
+</ul>
+<p>调整config.toml文件中的选项。</p>
+<ul>
+<li>步骤五</li>
+</ul>
+<p>一些你需要知道的hugo命令。</p>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token comment"># 新建一个页面</span>
+</span><span class="code-line">hugo new xxx.md
+</span><span class="code-line"><span class="token comment"># 在blog文件夹下新建一篇博文</span>
+</span><span class="code-line">hugo new blog/xxx.md
+</span></code></pre>
+<ul>
+<li>
+<p>步骤六</p>
+<ul>
+<li>添加、提交、推送本地的git仓库到GitHub</li>
+<li>将git仓库导入到Netlify或者Vercel，来享受自动部署的乐趣。你可以在hugo官方文档的 <a href="https://gohugo.io/hosting-and-deployment/">Hosting &#x26; Deployment</a> 章节或者网上的其他资源处找到更多关于部署的相关信息。</li>
+</ul>
+</li>
+</ul>
+<p>祝写博客愉快！:blush: :blush: :blush:</p>
+<h2 id="许可证"><a aria-hidden="true" tabindex="-1" href="#许可证"><span class="icon icon-link"></span></a>许可证</h2>
+<p>MIT</p>]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHub Flavored Markdown语法]]></title>
+        <id>http://localhost:3000/2023/03/github-flavored-markdown</id>
+        <link href="http://localhost:3000/2023/03/github-flavored-markdown"/>
+        <updated>2023-03-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>代码：</p>
+<pre><code class="code-highlight"><span class="code-line">&#x3C;details>
+</span><span class="code-line">&#x3C;summary>
+</span><span class="code-line">
+</span><span class="code-line">## close demo
+</span><span class="code-line">&#x3C;/summary>
+</span><span class="code-line">This is a default hidden place.
+</span><span class="code-line">&#x3C;/details>
+</span></code></pre>
+<p>效果：</p>
+&#x3C;details>
+&#x3C;summary>
+<h2 id="close-demo"><a aria-hidden="true" tabindex="-1" href="#close-demo"><span class="icon icon-link"></span></a>close demo</h2>
+&#x3C;/summary>
+This is a default hidden place.
+&#x3C;/details>
+<p>代码：</p>
+<pre><code class="code-highlight"><span class="code-line">&#x3C;details>
+</span><span class="code-line">&#x3C;summary open>
+</span><span class="code-line">
+</span><span class="code-line">## open demo
+</span><span class="code-line">&#x3C;/summary>
+</span><span class="code-line">This is a default open place.
+</span><span class="code-line">&#x3C;/details>
+</span></code></pre>
+<p>效果：</p>
+&#x3C;details open>
+&#x3C;summary>
+<h2 id="open-demo"><a aria-hidden="true" tabindex="-1" href="#open-demo"><span class="icon icon-link"></span></a>open demo</h2>
+&#x3C;/summary>
+This is a default open place.
+&#x3C;/details>]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[最伟大的作品]]></title>
+        <id>http://localhost:3000/2023/03/the-greatest-work-of-all</id>
+        <link href="http://localhost:3000/2023/03/the-greatest-work-of-all"/>
+        <updated>2023-03-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>哥穿着复古西装</p>
+<p>拿着手杖弹着魔法乐章</p>
+<p>漫步走在莎玛丽丹</p>
+<p>被岁月翻新的时光</p>
+<p>望不到边界的帝国</p>
+<p>用音符筑成的王座</p>
+<p>我用琴键穿梭1920错过的不朽</p>
+<p>啊偏执是那马格利特</p>
+<p>被我变出的苹果</p>
+<p>超现实的是我</p>
+<p>还是他原本想画的小丑</p>
+<p>不是烟斗的烟斗</p>
+<p>脸上的鸽子没有飞走</p>
+<p>请你记得</p>
+<p>他是个画家不是什么调酒</p>
+<p>达利翘胡是谁给他的思索</p>
+<p>弯了汤匙借你灵感不用还我</p>
+<p>融化的是墙上时钟还是乳酪</p>
+<p>龙虾电话那头你都不回我</p>
+<p>浪荡是世俗画作里最自由不拘的水墨</p>
+<p>花都优雅的双腿是这宇宙笔下的一抹</p>
+<p>漂洋过海的乡愁种在一无所有的温柔</p>
+<p>寂寞的枝头才能长出常玉要的花朵</p>
+<p>小船静静往返</p>
+<p>马谛斯的海岸</p>
+<p>星空下的夜晚</p>
+<p>交给梵谷点燃</p>
+<p>梦美的太短暂</p>
+<p>孟克桥上呐喊</p>
+<p>这世上的热闹</p>
+<p>出自孤单</p>
+<p>花园流淌的阳光</p>
+<p>空气摇晃着花香</p>
+<p>我请莫内帮个忙</p>
+<p>能不能来张自画像</p>
+<p>大师眺望着远方</p>
+<p>研究色彩的形状</p>
+<p>突然回头要我说说</p>
+<p>我对我自己的印象</p>
+<p>世代的狂</p>
+<p>音乐的王</p>
+<p>万物臣服在我乐章</p>
+<p>路还在闯</p>
+<p>我还在创</p>
+<p>指尖的旋律在渴望</p>
+<p>世代的狂</p>
+<p>音乐的王</p>
+<p>我想我不需要画框</p>
+<p>它框不住琴键的速度</p>
+<p>我的音符全部是未来艺术</p>
+<p>日出在印象的港口来回</p>
+<p>光线唤醒了睡着的花叶</p>
+<p>草地正为一场小雨欢悦</p>
+<p>我们彼此深爱这个世界</p>
+<p>停在康桥上的那只蝴蝶</p>
+<p>飞往午夜河畔的翡冷翠</p>
+<p>遗憾被偶然藏在了诗页</p>
+<p>是微笑都透不进的世界</p>
+<p>巴黎的鳞爪</p>
+<p>感伤的文法</p>
+<p>要用音乐翻阅</p>
+<p>晚风的灯下</p>
+<p>旅人的花茶</p>
+<p>我换成了咖啡</p>
+<p>之后他就</p>
+<p>爱上了苦涩这个复杂词汇</p>
+<p>因为这才是挥手</p>
+<p>向云彩道别的滋味</p>
+<p>小船静静往返</p>
+<p>马谛斯的海岸</p>
+<p>星空下的夜晚</p>
+<p>交给梵谷点燃</p>
+<p>梦美的太短暂</p>
+<p>孟克桥上呐喊</p>
+<p>这世上的热闹</p>]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我在这]]></title>
+        <id>http://localhost:3000/2023/03/i-am-here</id>
+        <link href="http://localhost:3000/2023/03/i-am-here"/>
+        <updated>2023-03-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>才一转眼 就这些年</p>
+<p>无邪的岁月 还刻在眉间</p>
+<p>温柔却坚决 懂得但无言</p>
+<p>你让我知道爱不必论条件</p>
+<p>更远地平线 在未知那边</p>
+<p>我必须告别 才能再发现</p>
+<p>你这边几点 我的月未圆</p>
+<p>你脚下影子 是我的思念</p>
+<p>我在这 在勇敢新世界 要一往无前</p>
+<p>那是你眼泪里的温热 我不能胆怯</p>
+<p>我在这 我就在你身边 其实并没有走远</p>
+<p>轻抚你的脸 微风就是我指尖</p>
+<p>新地平线 在未知那边</p>
+<p>不能太安全 才有发现</p>
+<p>你这边几点 我的月未圆</p>
+<p>信守这个心愿 约定再见</p>
+<p>我在这 在勇敢新世界 要一往无前</p>
+<p>那是你眼泪里的温热 我不能胆怯</p>
+<p>我在这 我就在你身边 其实并没有走远</p>
+<p>轻抚你的脸 微风就是我指尖</p>
+<p>珍惜当下 在哪也能开花</p>
+<p>不必害怕 命运的分岔</p>
+<p>无论我们在哪 心意也能感应吧</p>
+<p>寂寞也是好的 让人长大</p>
+<p>我在这 在勇敢新世界 呼喊你一遍</p>
+<p>那是你眼泪里的温热 我不能胆怯</p>
+<p>我在这 我就在你身边 其实并没有走远</p>
+<p>轻抚你的脸 微风就是我指尖</p>
+<p>闭上你双眼 让我轻吻你的脸</p>]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[少年中国说]]></title>
+        <id>http://localhost:3000/2023/03/young-chinese-said</id>
+        <link href="http://localhost:3000/2023/03/young-chinese-said"/>
+        <updated>2023-03-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>少年富则国富</p>
+<p>少年强则国强</p>
+<p>少年自由则国自由</p>
+<p>少年智则国智</p>
+<p>少年富则国富</p>
+<p>少年强则国强</p>
+<p>少年自由则国自由</p>
+<p>红日初升其道大光</p>
+<p>河出伏流一泻汪洋</p>
+<p>潜龙腾渊鳞爪飞扬</p>
+<p>乳虎啸谷百兽震惶</p>
+<p>少年自有少年狂</p>
+<p>身似山河挺脊梁</p>
+<p>敢将日月再丈量</p>
+<p>今朝唯我少年郎</p>
+<p>敢问天地试锋芒</p>
+<p>披荆斩棘谁能挡</p>
+<p>世人笑我我自强</p>
+<p>不负年少</p>
+<p>少年智则国智</p>
+<p>少年富则国富</p>
+<p>少年强则国强</p>
+<p>少年自由则国自由</p>
+<p>干将发硎有作其芒</p>
+<p>天戴其苍地履其黄</p>
+<p>纵有千古横有八荒</p>
+<p>前途似海来日方长</p>
+<p>少年自有少年狂</p>
+<p>身似山河挺脊梁</p>
+<p>敢将日月再丈量</p>
+<p>今朝唯我少年郎</p>
+<p>敢问天地试锋芒</p>
+<p>披荆斩棘谁能挡</p>
+<p>世人笑我我自强</p>
+<p>不负年少</p>
+<p>少年自有少年狂</p>
+<p>心似骄阳万丈光</p>
+<p>千难万挡我去闯</p>
+<p>今朝唯我少年郎</p>
+<p>天高海阔万里长</p>
+<p>华夏少年意气扬</p>
+<p>发愤图强做栋梁</p>
+<p>不负年少</p>
+<p>发愤图强做栋梁</p>
+<p>不负年少</p>]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[听妈妈的话]]></title>
+        <id>http://localhost:3000/2023/03/listen-to-your-mother</id>
+        <link href="http://localhost:3000/2023/03/listen-to-your-mother"/>
+        <updated>2023-03-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>小朋友 你是否有很多问号</p>
+<p>为什么 别人在那看漫画</p>
+<p>我却在学画画 对着钢琴说话</p>
+<p>别人在玩游戏</p>
+<p>我却靠在墙壁背我的 ABC</p>
+<p>我说我要一台大大的飞机</p>
+<p>但却得到一台旧旧录音机</p>
+<p>为什么要听妈妈的话</p>
+<p>长大后你就会开始懂了这段话</p>
+<p>哼</p>
+<p>长大后我开始明白</p>
+<p>为什么我 跑得比别人快</p>
+<p>飞得比别人高</p>
+<p>将来大家看的都是我画的漫画</p>
+<p>大家唱的都是 我写的歌</p>
+<p>妈妈的辛苦 不让你看见</p>
+<p>温暖的食谱在她心里面</p>
+<p>有空就多多握握她的手</p>
+<p>把手牵着一起梦游</p>
+<hr>
+<p>听妈妈的话 别让她受伤</p>
+<p>想快快长大 才能保护她</p>
+<p>美丽的白发 幸福中发芽</p>
+<p>天使的魔法 温暖中慈祥</p>
+<hr>
+<p>在你的未来</p>
+<p>音乐是你的王牌</p>
+<p>拿王牌谈个恋爱</p>
+<p>唉 我不想把你教坏</p>
+<p>还是听妈妈的话吧</p>
+<p>晚点再恋爱吧</p>
+<p>我知道你未来的路</p>
+<p>但妈比我更清楚</p>
+<p>你会开始学其他同学</p>
+<p>在书包写东写西</p>
+<p>但我建议最好写妈妈</p>
+<p>我会用功读书</p>
+<p>用功读书</p>
+<p>怎么会从我嘴巴说出</p>
+<p>不想你输</p>
+<p>所以要叫你用功读书</p>
+<p>妈妈织给你的毛衣</p>
+<p>你要好好的收着</p>
+<p>因为母亲节到的时候</p>
+<p>我要告诉她我还留着</p>
+<p>对了 我会遇到了周润发</p>
+<p>所以你可以跟同学炫耀</p>
+<p>赌神未来是你爸爸</p>
+<p>我找不到 童年写的情书</p>
+<p>你写完不要送人</p>
+<p>因为过两天你会在操场上捡到</p>
+<p>你会开始喜欢上流行歌</p>
+<p>因为张学友开始准备唱吻别</p>
+<p>听妈妈的话 别让她受伤</p>
+<p>想快快长大 才能保护她</p>
+<p>美丽的白发 幸福中发芽</p>
+<p>天使的魔法 温暖中慈祥</p>
+<p>听妈妈的话 别让她受伤</p>
+<p>想快快长大 才能保护她</p>
+<p>长大后我开始明白</p>
+<p>为什么我 跑得比别人快</p>
+<p>飞得比别人高</p>
+<p>将来大家看的都是我画的漫画</p>
+<p>大家唱的都是 我写的歌</p>
+<p>妈妈的辛苦 不让你看见</p>
+<p>温暖的食谱在她心里面</p>
+<p>有空就多多握握她的手</p>
+<p>把手牵着一起梦游</p>
+<hr>
+<p>听妈妈的话 别让她受伤
+想快快长大 才能保护她
+美丽的白发 幸福中发芽
+天使的魔法 温暖中慈祥</p>]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[面朝大海，春暖花开]]></title>
+        <id>http://localhost:3000/2023/03/facing-the-sea-bloomy-spring</id>
+        <link href="http://localhost:3000/2023/03/facing-the-sea-bloomy-spring"/>
+        <updated>2023-03-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>从明天起，做一个幸福的人</p>
+<p>喂马，劈柴，周游世界</p>
+<p>从明天起，关心粮食和蔬菜</p>
+<p>我有一所房子，面朝大海，春暖花开</p>
+<p>从明天起，和每一个亲人通信</p>
+<p>告诉他们我的幸福</p>
+<p>那幸福的闪电告诉我的</p>
+<p>我将告诉每一个人</p>
+<p>给每一条河每一座山取一个温暖的名字</p>
+<p>陌生人，我也为你祝福</p>
+<p>愿你有一个灿烂的前程</p>
+<p>愿你有情人终成眷属</p>
+<p>愿你在尘世获得幸福</p>
+<p>我只愿面朝大海，春暖花开</p>]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[When to Use Static Generation v.s. Server-side Rendering]]></title>
+        <id>http://localhost:3000/2020/02/ssr-vs-ssg</id>
+        <link href="http://localhost:3000/2020/02/ssr-vs-ssg"/>
+        <updated>2020-02-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>We recommend using <strong>Static Generation</strong> (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.</p>
+<p>You can use Static Generation for many types of pages, including:</p>
+<ul>
+<li>Marketing pages</li>
+<li>Blog posts</li>
+<li>E-commerce product listings</li>
+<li>Help and documentation</li>
+</ul>
+<p>You should ask yourself: "Can I pre-render this page <strong>ahead</strong> of a user's request?" If the answer is yes, then you should choose Static Generation.</p>
+<p>On the other hand, Static Generation is <strong>not</strong> a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.</p>
+<p>In that case, you can use <strong>Server-Side Rendering</strong>. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate data.</p>]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Two Forms of Pre-rendering]]></title>
+        <id>http://localhost:3000/2020/01/pre-rendering</id>
+        <link href="http://localhost:3000/2020/01/pre-rendering"/>
+        <updated>2020-01-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="1two-forms-of-pre-rendering"><a aria-hidden="true" tabindex="-1" href="#1two-forms-of-pre-rendering"><span class="icon icon-link"></span></a>1、Two Forms of Pre-rendering</h2>
+<p>Next.js has two forms of pre-rendering: <strong>Static Generation</strong> and <strong>Server-side Rendering</strong>. The difference is in <strong>when</strong> it generates the HTML for a page.</p>
+<ul>
+<li><strong>Static Generation</strong> is the pre-rendering method that generates the HTML at <strong>build time</strong>. The pre-rendered HTML is then <em>reused</em> on each request.</li>
+<li><strong>Server-side Rendering</strong> is the pre-rendering method that generates the HTML on <strong>each request</strong>.</li>
+</ul>
+<p>Importantly, Next.js lets you <strong>choose</strong> which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.</p>
+<h2 id="2nextjs中的ssr和ssg的区别与联系"><a aria-hidden="true" tabindex="-1" href="#2nextjs中的ssr和ssg的区别与联系"><span class="icon icon-link"></span></a>2、next.js中的ssr和ssg的区别与联系</h2>
+<p>Next.js 是一个流行的 React 框架，用于构建服务器渲染（SSR）和静态生成（SSG）网站。以下是 SSR 和 SSG 之间的主要区别和联系：</p>
+<ul>
+<li>
+<p>服务器渲染（SSR，Server-Side Rendering）：</p>
+<p>每次页面请求时，服务器都会实时生成 HTML 内容，并将其发送给客户端。
+可以实现动态数据获取，更适用于需要实时更新数据的应用。
+对于 SEO（搜索引擎优化）和首屏加载性能有很好的支持。
+服务器负载较高，因为每个页面请求都需要服务器生成 HTML。
+可以通过使用缓存策略来减轻服务器负载，但需要额外的配置和管理。</p>
+</li>
+<li>
+<p>静态生成（SSG，Static Site Generation）：</p>
+<p>在构建时生成页面的 HTML，部署时将这些静态文件发送给客户端。
+适用于内容不经常更新的网站，如博客、文档等。
+对于 SEO（搜索引擎优化）和首屏加载性能有很好的支持。
+服务器负载较低，因为页面已经预先生成，无需在请求时生成。
+如果网站内容发生变化，需要重新构建并部署静态文件。</p>
+</li>
+<li>
+<p>联系：</p>
+<p>Next.js 支持在同一个应用程序中同时使用 SSR 和 SSG。可以根据每个页面的需求选择合适的渲染策略。
+两种方法都使用 React 进行页面的渲染，只是渲染的时间和地点有所不同。
+Next.js 提供了一些内置的函数（如 getStaticProps 和 getServerSideProps），以便在页面中获取数据并传递给组件。</p>
+</li>
+<li>
+<p>总结：Next.js 的 SSR 和 SSG 分别针对不同的应用场景。SSR 更适用于需要实时更新数据的应用，而 SSG 更适用于内容相对固定的网站。根据项目需求，可以灵活选择适合的渲染策略。</p>
+</li>
+</ul>]]></summary>
+    </entry>
+</feed>
