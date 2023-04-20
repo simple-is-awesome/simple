@@ -4,6 +4,7 @@ import Brightness5Icon from '@mui/icons-material/Brightness5'
 import Brightness4Icon from '@mui/icons-material/Brightness4'
 import Search from 'components/Search'
 import Navbar from 'components/Navbar'
+import getConfig from 'next/config'
 
 // 顶部导航栏组件
 export default function Header() {
@@ -25,11 +26,13 @@ export default function Header() {
 		}
 	}
 
+	const { publicRuntimeConfig } = getConfig()
+
 	return (
 		<header className="flex justify-between items-center border-b border-gray-30 py-3 px-5">
 			<div className="flex-grow">
 				<div className="text-xl pl-6">
-					<Link href="/">{process.env.NEXT_PUBLIC_SITE_TITLE}</Link>
+					<Link href="/">{publicRuntimeConfig.NEXT_PUBLIC_SITE_TITLE}</Link>
 				</div>
 			</div>
 			<div className="hidden md:block lg:hidden">
