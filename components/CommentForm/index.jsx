@@ -21,6 +21,7 @@ export default function CommentForm({quote, setQuote, setUpdateList,parentCommen
 
 		if (!validator.validate(email)) {
 			setEmailError('邮箱地址无效，请填写正确的邮箱地址。')
+			setButtonText('Submit')
 			return
 		} else {
 			setEmailError('')

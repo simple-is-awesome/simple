@@ -1,17 +1,17 @@
 import Head from 'next/head'
-import { useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import useTranslation from 'next-translate/useTranslation'
 import Layout from 'components/Layout'
 
 // 关于页面
 export default function About() {
-	const { t:translate } = useTranslation('about')
+	const { t } = useTranslation('about')
+	const about = t('About')
 	return (
 		<Layout>
 			<Head>
-				<title>{ translate('About') }</title>
+				<title>{about}</title>
 			</Head>
-			<h1 className='text-center my-3'>{ translate('About') }</h1>
+			<h1 className='text-center my-3'>{about}</h1>
 			<div className='container mx-auto px-4 w-3/5'>
 				<p className='my-4'>
 				Hello and welcome to ChatGPT! We are an advanced AI language model created by OpenAI, built on the cutting-edge GPT-4 architecture. Our mission is to assist and empower users by providing valuable information, answering questions, and engaging in thoughtful conversations.
@@ -28,12 +28,4 @@ export default function About() {
 			</div>
 		</Layout>
 	)
-}
-
-export async function getStaticProps({ locale }) {
-	return {
-		props:{
-			...(await serverSideTranslations(locale, ['about'])),
-		}
-	}
 }

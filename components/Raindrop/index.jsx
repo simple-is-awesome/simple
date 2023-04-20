@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react'
+import useTranslation from 'next-translate/useTranslation'
 import Date from 'components/Date'
 
 // raindrop组件
-export default function Raindrop({translate}) {
+export default function Raindrop() {
 	const [raindropData, setraindropData] = useState([])
+	const { t } = useTranslation('home')
+	const raindrop = t('Raindrop')
 
 	useEffect(() => {
 		async function fetchData() {
@@ -16,7 +19,7 @@ export default function Raindrop({translate}) {
 
 	return (
 		<div className="bg-white shadow-lg rounded-lg p-6 my-8 dark:bg-gray-600 dark:text-gray-100">
-			<div className="text-2xl font-semibold mb-4">{ translate('Raindrop') }</div>
+			<div className="text-2xl font-semibold mb-4">{raindrop}</div>
 			<ul className="space-y-4">
 				{raindropData.map((item) => (
 					<li key={item.title} className="border-b border-gray-200 pb-2">

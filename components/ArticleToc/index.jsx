@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import parseHeading from 'lib/parseHeading'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow'
+import parseHeading from 'lib/parseHeading'
 
 // 文章目录组件
 export default function Sidebar({ contentMarkdown, showtoc }) {

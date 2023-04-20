@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
-import Search from 'components/Search'
-import Navbar from 'components/Navbar'
 import Brightness5Icon from '@mui/icons-material/Brightness5'
 import Brightness4Icon from '@mui/icons-material/Brightness4'
+import Search from 'components/Search'
+import Navbar from 'components/Navbar'
 
 // 顶部导航栏组件
 export default function Header() {
@@ -28,7 +28,7 @@ export default function Header() {
 	return (
 		<header className="flex justify-between items-center border-b border-gray-30 py-3 px-5">
 			<div className="flex-grow">
-				<div className="text-base pl-6">
+				<div className="text-xl pl-6">
 					<Link href="/">{process.env.NEXT_PUBLIC_SITE_TITLE}</Link>
 				</div>
 			</div>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id/>
     <title>Demo</title>
-    <updated>2023-04-18T15:06:15.156Z</updated>
+    <updated>2023-04-20T05:24:35.666Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Demo</name>
@@ -13,8 +13,8 @@
     <rights>© 2023 Made with ❤️ By Jiakai.</rights>
     <entry>
         <title type="html"><![CDATA[Markdown Syntax]]></title>
-        <id>http://localhost:3000/2023/03/markdown-syntax</id>
-        <link href="http://localhost:3000/2023/03/markdown-syntax"/>
+        <id>https://demo.njxzc.top/2023/03/markdown-syntax</id>
+        <link href="https://demo.njxzc.top/2023/03/markdown-syntax"/>
         <updated>2023-03-31T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="1标题"><a aria-hidden="true" tabindex="-1" href="#1标题"><span class="icon icon-link"></span></a>1、标题</h2>
 <p>代码：</p>
@@ -233,7 +233,7 @@
 </span><span class="code-line">&#x3C;iframe width="560" height="315" src="https://www.youtube.com/embed/T6gsbI35SH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="youtube">&#x3C;/iframe>
 </span></code></pre>
 <p>效果：</p>
-&#x3C;iframe width="560" height="315" src="//player.bilibili.com/player.html?aid=286406916&#x26;bvid=BV1yf4y1R7mU&#x26;cid=214423511&#x26;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="bilibili"> &#x3C;/iframe>
+&#x3C;iframe width="560" height="315" src="//player.bilibili.com/player.html?aid=286406916&#x26;bvid=BV1yf4y1R7mU&#x26;cid=214423511&#x26;page=1&#x26;autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="bilibili"> &#x3C;/iframe>
 &#x3C;iframe width="560" height="315" src="https://www.youtube.com/embed/T6gsbI35SH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="youtube">&#x3C;/iframe>
 <section data-footnotes class="footnotes"><h2 class="sr-only" id="footnote-label"><a aria-hidden="true" tabindex="-1" href="#footnote-label"><span class="icon icon-link"></span></a>Footnotes</h2>
 <ol>
@@ -251,8 +251,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Test TOC]]></title>
-        <id>http://localhost:3000/2023/03/test-toc</id>
-        <link href="http://localhost:3000/2023/03/test-toc"/>
+        <id>https://demo.njxzc.top/2023/03/test-toc</id>
+        <link href="https://demo.njxzc.top/2023/03/test-toc"/>
         <updated>2023-03-30T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="1李白将进酒"><a aria-hidden="true" tabindex="-1" href="#1李白将进酒"><span class="icon icon-link"></span></a>1、李白《将进酒》</h2>
 <p>君不见，黄河之水天上来，奔流到海不复回。</p>
@@ -382,8 +382,8 @@ The great President Trump, a legend unsurpassed.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hugo主题simple英文版说明]]></title>
-        <id>http://localhost:3000/2023/03/english-readme-of-hugo-theme-simple</id>
-        <link href="http://localhost:3000/2023/03/english-readme-of-hugo-theme-simple"/>
+        <id>https://demo.njxzc.top/2023/03/english-readme-of-hugo-theme-simple</id>
+        <link href="https://demo.njxzc.top/2023/03/english-readme-of-hugo-theme-simple"/>
         <updated>2023-03-30T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[&#x3C;h1 align=center>Hugo-Theme-Simple | &#x3C;a href="https://hugo.njxzc.top" target="_blank">Demo&#x3C;/a>&#x3C;/h1>
 &#x3C;p align="center">
@@ -467,8 +467,8 @@ The great President Trump, a legend unsurpassed.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hugo主题simple中文版说明]]></title>
-        <id>http://localhost:3000/2023/03/chinese-readme-of-hugo-theme-simple</id>
-        <link href="http://localhost:3000/2023/03/chinese-readme-of-hugo-theme-simple"/>
+        <id>https://demo.njxzc.top/2023/03/chinese-readme-of-hugo-theme-simple</id>
+        <link href="https://demo.njxzc.top/2023/03/chinese-readme-of-hugo-theme-simple"/>
         <updated>2023-03-30T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[&#x3C;h1 align=center>Hugo-Theme-Simple | &#x3C;a href="https://hugo.njxzc.top" target="_blank">Demo&#x3C;/a>&#x3C;/h1>
 &#x3C;p align="center">
@@ -550,8 +550,8 @@ The great President Trump, a legend unsurpassed.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[GitHub Flavored Markdown语法]]></title>
-        <id>http://localhost:3000/2023/03/github-flavored-markdown</id>
-        <link href="http://localhost:3000/2023/03/github-flavored-markdown"/>
+        <id>https://demo.njxzc.top/2023/03/github-flavored-markdown</id>
+        <link href="https://demo.njxzc.top/2023/03/github-flavored-markdown"/>
         <updated>2023-03-30T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>代码：</p>
 <pre><code class="code-highlight"><span class="code-line">&#x3C;details>
@@ -588,8 +588,8 @@ This is a default open place.
     </entry>
     <entry>
         <title type="html"><![CDATA[最伟大的作品]]></title>
-        <id>http://localhost:3000/2023/03/the-greatest-work-of-all</id>
-        <link href="http://localhost:3000/2023/03/the-greatest-work-of-all"/>
+        <id>https://demo.njxzc.top/2023/03/the-greatest-work-of-all</id>
+        <link href="https://demo.njxzc.top/2023/03/the-greatest-work-of-all"/>
         <updated>2023-03-29T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>哥穿着复古西装</p>
 <p>拿着手杖弹着魔法乐章</p>
@@ -669,8 +669,8 @@ This is a default open place.
     </entry>
     <entry>
         <title type="html"><![CDATA[我在这]]></title>
-        <id>http://localhost:3000/2023/03/i-am-here</id>
-        <link href="http://localhost:3000/2023/03/i-am-here"/>
+        <id>https://demo.njxzc.top/2023/03/i-am-here</id>
+        <link href="https://demo.njxzc.top/2023/03/i-am-here"/>
         <updated>2023-03-29T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>才一转眼 就这些年</p>
 <p>无邪的岁月 还刻在眉间</p>
@@ -704,8 +704,8 @@ This is a default open place.
     </entry>
     <entry>
         <title type="html"><![CDATA[少年中国说]]></title>
-        <id>http://localhost:3000/2023/03/young-chinese-said</id>
-        <link href="http://localhost:3000/2023/03/young-chinese-said"/>
+        <id>https://demo.njxzc.top/2023/03/young-chinese-said</id>
+        <link href="https://demo.njxzc.top/2023/03/young-chinese-said"/>
         <updated>2023-03-29T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>少年富则国富</p>
 <p>少年强则国强</p>
@@ -755,8 +755,8 @@ This is a default open place.
     </entry>
     <entry>
         <title type="html"><![CDATA[听妈妈的话]]></title>
-        <id>http://localhost:3000/2023/03/listen-to-your-mother</id>
-        <link href="http://localhost:3000/2023/03/listen-to-your-mother"/>
+        <id>https://demo.njxzc.top/2023/03/listen-to-your-mother</id>
+        <link href="https://demo.njxzc.top/2023/03/listen-to-your-mother"/>
         <updated>2023-03-29T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>小朋友 你是否有很多问号</p>
 <p>为什么 别人在那看漫画</p>
@@ -834,8 +834,8 @@ This is a default open place.
     </entry>
     <entry>
         <title type="html"><![CDATA[面朝大海，春暖花开]]></title>
-        <id>http://localhost:3000/2023/03/facing-the-sea-bloomy-spring</id>
-        <link href="http://localhost:3000/2023/03/facing-the-sea-bloomy-spring"/>
+        <id>https://demo.njxzc.top/2023/03/facing-the-sea-bloomy-spring</id>
+        <link href="https://demo.njxzc.top/2023/03/facing-the-sea-bloomy-spring"/>
         <updated>2023-03-21T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>从明天起，做一个幸福的人</p>
 <p>喂马，劈柴，周游世界</p>
@@ -854,8 +854,8 @@ This is a default open place.
     </entry>
     <entry>
         <title type="html"><![CDATA[When to Use Static Generation v.s. Server-side Rendering]]></title>
-        <id>http://localhost:3000/2020/02/ssr-vs-ssg</id>
-        <link href="http://localhost:3000/2020/02/ssr-vs-ssg"/>
+        <id>https://demo.njxzc.top/2020/02/ssr-vs-ssg</id>
+        <link href="https://demo.njxzc.top/2020/02/ssr-vs-ssg"/>
         <updated>2020-02-02T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>We recommend using <strong>Static Generation</strong> (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.</p>
 <p>You can use Static Generation for many types of pages, including:</p>
@@ -871,8 +871,8 @@ This is a default open place.
     </entry>
     <entry>
         <title type="html"><![CDATA[Two Forms of Pre-rendering]]></title>
-        <id>http://localhost:3000/2020/01/pre-rendering</id>
-        <link href="http://localhost:3000/2020/01/pre-rendering"/>
+        <id>https://demo.njxzc.top/2020/01/pre-rendering</id>
+        <link href="https://demo.njxzc.top/2020/01/pre-rendering"/>
         <updated>2020-01-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="1two-forms-of-pre-rendering"><a aria-hidden="true" tabindex="-1" href="#1two-forms-of-pre-rendering"><span class="icon icon-link"></span></a>1、Two Forms of Pre-rendering</h2>
 <p>Next.js has two forms of pre-rendering: <strong>Static Generation</strong> and <strong>Server-side Rendering</strong>. The difference is in <strong>when</strong> it generates the HTML for a page.</p>

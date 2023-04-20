@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
+import useTranslation from 'next-translate/useTranslation'
 import Layout from 'components/Layout'
 import Date from 'components/Date'
 import BackButton from 'components/Backbutton'
@@ -7,19 +8,22 @@ import { getPostsListBySearchTerm } from 'lib/posts'
 
 // 搜索页面
 export default function SearchPage({ searchResults, term }) {
+	const { t } = useTranslation('search')
+	const searchResultsTitle = t('SearchResults')
+	const nothingFound = t('NothingFound')
 	return (
 		<Layout>
 			{/* 标题 */}
 			<Head>
-				<title>搜索结果：{term}</title>
+				<title>{searchResults}：{term}</title>
 			</Head>
 			{/* 搜索结果 */}
 			<section className="grid grid-cols-1 lg:grid-cols-12 gap-8 px-5">
 				<div className="hidden lg:block lg:col-span-2" />
 				<div className="col-span-full lg:col-span-7">
-					<h1 className="text-2xl font-semibold mb-4">搜索结果：{term}</h1>
+					<h1 className="text-2xl font-semibold mb-4 text-center">{searchResultsTitle}：{term}</h1>
 					{searchResults.length === 0 ? (
-						<p className="text-gray-600">没有找到相关结果</p>
+						<p className="text-gray-600 text-2xl flex items-center justify-center h-full">{nothingFound}</p>
 					) : (
 						<ul className="grid grid-cols-1 gap-8 mb-8">
 							{searchResults.map(({ year, month, slug, title, date,summary }) => (

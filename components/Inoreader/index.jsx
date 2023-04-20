@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react'
+import useTranslation from 'next-translate/useTranslation'
 import Date from 'components/Date'
 
 // inoreader组件
-export default function Inoreader({translate}) {
+export default function Inoreader() {
 	const [inoreaderData, setInoreaderData] = useState([])
+	const { t } = useTranslation('home')
+	const inoreader = t('Inoreader')
 
 	useEffect(() => {
 		async function fetchData() {
@@ -16,7 +19,7 @@ export default function Inoreader({translate}) {
 
 	return (
 		<div className="bg-white shadow-lg rounded-lg p-6 my-8 dark:bg-gray-600 dark:text-gray-100">
-			<div className="text-2xl font-semibold mb-4">{ translate('Inoreader') }</div>
+			<div className="text-2xl font-semibold mb-4">{inoreader}</div>
 			<ul className="space-y-4">
 				{inoreaderData.map((item) => (
 					<li key={item.id} className="border-b border-gray-200 pb-2">

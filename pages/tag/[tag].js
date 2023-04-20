@@ -1,13 +1,18 @@
-import { getPostsListByTag, getAllTags } from 'lib/posts'
 import Link from 'next/link'
+import useTranslation from 'next-translate/useTranslation'
 import Layout from 'components/Layout'
 import Date from 'components/Date'
 import BackButton from 'components/Backbutton'
+import { getPostsListByTag, getAllTags } from 'lib/posts'
 
 export default function TaggedPosts({ posts, tag }) {
+	
+	const { t } = useTranslation('common')
+	const postsWithTag = t('PostsWithTag')
+
 	return (
 		<Layout>
-			<h1 className="text-3xl font-semibold mb-4 text-center">Posts with tag: {tag}</h1>
+			<h1 className="text-3xl font-semibold mb-4 text-center">{postsWithTag}: {tag}</h1>
 			<ul className="grid grid-cols-1 gap-4">
 				{posts.map((post) => (
 					<li

@@ -1,14 +1,17 @@
-import ImageGallery from 'react-image-gallery'
-import Layout from 'components/Layout'
 import Head from 'next/head'
+import ImageGallery from 'react-image-gallery'
+import useTranslation from 'next-translate/useTranslation'
+import Layout from 'components/Layout'
 
-export default function Gallery({ images,translate }) {
+export default function Gallery({ images }) {
+	const { t } = useTranslation('gallery')
+	const gallery= t('Gallery')
 	return (
 		<Layout>
 			<Head>
-				<title>{translate('Gallery')}</title>
+				<title>{gallery}</title>
 			</Head>
-			<div className='text-3xl text-center my-3'>{translate('Gallery')}</div>
+			<div className='text-3xl text-center my-3'>{gallery}</div>
 			<div className='flex justify-center'>
 				<ImageGallery items={images} thumbnailPosition="right"/>
 			</div>

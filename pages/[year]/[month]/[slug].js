@@ -26,7 +26,7 @@ export default function Post({ postData, params,stats }) {
 			<div className="flex flex-col md:grid md:grid-cols-6 md:gap-2">
 				{/* chatgpt总结 */}
 				<div className="md:col-span-1 order-1 md:order-1">
-					{process.env.OPENAI_API_KEY && (
+					{process.env.NEXT_PUBLIC_OPENAI_API_KEY_AVAILABLE && (
 						<div className='md:sticky top-1/4 bottom-1/4 p-2 bg-gray-300 shadow-lg rounded-md dark:text-gray-900 mx-auto md:mx-0 w-full md:w-auto'>
 							<ChatGPTSummary contentMarkdown={postData.contentMarkdown} params={params} tags={postData.tags} />
 						</div>

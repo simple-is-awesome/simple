@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import Identicon from 'identicon.js'
 import CryptoJS from 'crypto-js'
-import Image from 'next/image'
 import Date from 'components/Date'
 
 // 生成头像

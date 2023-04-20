@@ -1,4 +1,7 @@
+import { useState } from 'react'
+import { useRouter } from 'next/router'
 import Link from 'next/link'
+import useTranslation from 'next-translate/useTranslation'
 import HomeIcon from '@mui/icons-material/Home'
 import InfoIcon from '@mui/icons-material/Info'
 import ImageIcon from '@mui/icons-material/Image'
@@ -6,8 +9,6 @@ import RssFeedIcon from '@mui/icons-material/RssFeed'
 import MenuIcon from '@mui/icons-material/Menu'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
 import TranslateIcon from '@mui/icons-material/Translate'
-import { useState } from 'react'
-import { useRouter } from 'next/router'
 
 export default function Navbar({ RenderThemeChanger }) {
 	const [moreMenuVisible, setMoreMenuVisible] = useState(false)
@@ -18,10 +19,15 @@ export default function Navbar({ RenderThemeChanger }) {
 		zh: '简体中文',
 		en: 'English',
 	}
+	const { t } = useTranslation('common')
+	const home = t('Home')
+	const about = t('About')
+	const gallery = t('Gallery')
+	const rss = t('RSS')
 
 	const router = useRouter()
+	const { locale:activeLocale } = router
 	const currentUrl = router.asPath
-	const activeLocale = router.locale
 
 	const sortedLocales = Object.entries(supportedLocales).sort(([localeA], [localeB]) => {
 		if (localeA === activeLocale) return -1
@@ -49,25 +55,25 @@ export default function Navbar({ RenderThemeChanger }) {
 					<li className="hidden md:block">
 						<Link href="/" className="flex items-center dark:text-gray-100">
 							<HomeIcon />
-							<span>Home</span>
+							<span>{home}</span>
 						</Link>
 					</li>
 					<li className="hidden md:block">
 						<Link href="/about" className="flex items-center dark:text-gray-100">
 							<InfoIcon />
-							<span>About</span>
+							<span>{about}</span>
 						</Link>
 					</li>
 					<li className="hidden md:block">
 						<Link href="/gallery" className="flex items-center dark:text-gray-100">
 							<ImageIcon />
-							<span>Gallery</span>
+							<span>{gallery}</span>
 						</Link>
 					</li>
 					<li className="hidden md:block">
 						<Link href="/rss.xml" className="flex items-center dark:text-gray-100">
 							<RssFeedIcon />
-							<span>RSS</span>
+							<span>{rss}</span>
 						</Link>
 					</li>
 					<li className="hidden xl:block relative">
@@ -126,22 +132,22 @@ export default function Navbar({ RenderThemeChanger }) {
 								onMouseLeave={ () =>setMobileMenuVisible(false)} >
 								<li>
 									<Link href="/" className="flex items-center hover:bg-gray-100 dark:hover:bg-gray-700">
-										<span className='mx-auto'>Home</span>
+										<span className='mx-auto'>{home}</span>
 									</Link>
 								</li>
 								<li>
 									<Link href="/about" className="flex items-center hover:bg-gray-100 dark:hover:bg-gray-700">
-										<span className='mx-auto'>About</span>
+										<span className='mx-auto'>{about}</span>
 									</Link>
 								</li>
 								<li>
 									<Link href="/gallery" className="flex items-center hover:bg-gray-100 dark:hover:bg-gray-700">
-										<span className='mx-auto'>Gallery</span>
+										<span className='mx-auto'>{gallery}</span>
 									</Link>
 								</li>
 								<li>
 									<Link href="/rss.xml" className="flex items-center hover:bg-gray-100 dark:hover:bg-gray-700">
-										<span className='mx-auto'>RSS</span>
+										<span className='mx-auto'>{rss}</span>
 									</Link>
 								</li>
 								<div className="absolute right-0 mt-2 py-2 w-36 bg-white dark:bg-gray-600 dark:text-gray-100 text-center border-t border-gray-30">

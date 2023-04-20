@@ -5,14 +5,10 @@ import Date from 'components/Date'
 import RightSidebar from 'components/RightSidebar'
 import { getSortedPostsData, getAllTags } from 'lib/posts'
 import generateRSSFeed from 'lib/generateRSSFeed'
-import { useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Home({ allPostsData, recentPosts, allTags }) {
 	const totalPages = Math.ceil(allPostsData.length / parseInt(process.env.NEXT_PUBLIC_POSTS_PERPAGE))
 	const postsToRender = allPostsData.slice(0, process.env.NEXT_PUBLIC_POSTS_PERPAGE)
-
-	const { t: translate } = useTranslation('index')
 	
 	return (
 		<Layout>
@@ -49,24 +45,24 @@ export default function Home({ allPostsData, recentPosts, allTags }) {
 					</div>
 				</div>
 				<div className="hidden xl:block xl:col-span-3">
-					<RightSidebar recentPosts={recentPosts} allTags={allTags} translate={translate} />
+					<RightSidebar recentPosts={recentPosts} allTags={allTags} />
 				</div>
 			</section>
 		</Layout>
 	)
 }
 
-export async function getStaticProps({ locale}) {
+export async function getStaticProps() {
 	const allPostsData = getSortedPostsData()
 	const recentPosts = allPostsData.slice(0, 5)
 	const allTags = getAllTags()
-	await generateRSSFeed()
+
+	await generateRSSFeed(allPostsData)
 	return {
 		props: {
 			allPostsData,
 			recentPosts,
 			allTags,
-			...(await serverSideTranslations(locale, ['index'])),
 		},
 	}
 }

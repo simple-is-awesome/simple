@@ -6,8 +6,6 @@ import Date from 'components/Date'
 import RightSidebar from 'components/RightSidebar'
 import Pagination from 'components/Pagination'
 import { getSortedPostsData, getAllTags } from 'lib/posts'
-import { useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Page({ allPostsData, recentPosts, allTags, currentPage }) {
 	const router = useRouter()
@@ -17,8 +15,6 @@ export default function Page({ allPostsData, recentPosts, allTags, currentPage }
 	const postsToRender = allPostsData.slice(startIndex, endIndex)
 
 	const totalPages = Math.ceil(allPostsData.length / postsPerPage)
-
-	const { t: translate } = useTranslation('index')
 
 	const handlePrevPage = () => {
 		if (parseInt(currentPage) === 2) {
@@ -68,7 +64,7 @@ export default function Page({ allPostsData, recentPosts, allTags, currentPage }
 				</div>
 				{/* 右侧边栏 */}
 				<div className="hidden lg:block lg:col-span-3">
-					<RightSidebar recentPosts={recentPosts} allTags={allTags} translate={translate} />
+					<RightSidebar recentPosts={recentPosts} allTags={allTags} />
 				</div>
 			</section>
 		</Layout>
@@ -98,7 +94,7 @@ export async function getStaticPaths({ locales }) {
 	}
 }  
 
-export async function getStaticProps({ params,locale }) {
+export async function getStaticProps({ params }) {
 	const currentPage = params.page
 	const allPostsData = getSortedPostsData()
 	const recentPosts = allPostsData.slice(0, 5)
@@ -109,8 +105,7 @@ export async function getStaticProps({ params,locale }) {
 			allPostsData,
 			recentPosts,
 			allTags,
-			currentPage,
-			...(await serverSideTranslations(locale, ['index'])),
+			currentPage
 		},
 	}
 }

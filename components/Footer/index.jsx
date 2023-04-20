@@ -16,7 +16,7 @@ export default function Footer() {
 			<a href="https://notbyai.fyi/" target="_blank" className="flex items-center">
 				<Image
 					src="/images/Written-By-Human-Not-By-AI-Badge-black.svg"
-					width={64}
+					width={100}
 					height={64}
 					alt="Written By Human Not By AI Badge black"
 					className="hidden md:block" />
