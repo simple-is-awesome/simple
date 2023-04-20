@@ -15,11 +15,11 @@ RUN \
   else echo "Lockfile not found." && exit 1; \
   fi
 
-
 # Rebuild the source code only when needed
 FROM base AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
+COPY env-config.js ./
 COPY . .
 
 # Next.js collects completely anonymous telemetry data about general usage.
@@ -56,4 +56,4 @@ EXPOSE 3000
 
 ENV PORT 3000
 
-CMD ["node", "server.js"]
+CMD ["sh", "-c", "node env-config.js && node server.js"]
