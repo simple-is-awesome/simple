@@ -19,7 +19,7 @@ RUN \
 FROM base AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
-COPY env-config.js ./
+COPY entrypoint.sh ./
 COPY . .
 
 # Next.js collects completely anonymous telemetry data about general usage.
@@ -49,6 +49,7 @@ COPY --from=builder /app/public ./public
 # https://nextjs.org/docs/advanced-features/output-file-tracing
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+COPY --from=builder /app/entrypoint.sh /entrypoint.sh
 
 USER nextjs
 
@@ -56,4 +57,4 @@ EXPOSE 3000
 
 ENV PORT 3000
 
-CMD ["sh", "-c", "node env-config.js && node server.js"]
+ENTRYPOINT ["/bin/sh", "/entrypoint.sh"]
