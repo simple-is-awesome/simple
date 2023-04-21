@@ -77,10 +77,10 @@ git clone https://github.com/simple-is-awesome/simple.git
 # 进入文件夹
 cd simple
 
-# 编辑.env文件的内容，填写环境变量
+mv .env.example .env
 
-# 使用 Docker Compose 启动和运行定义在 docker-compose.yml 文件中的服务。
-# -d 标志表示以 "detached"（分离）模式运行，也就是在后台运行，不会阻塞当前终端。
+docker build -t blog .
+
 docker compose up -d
 ```
 
