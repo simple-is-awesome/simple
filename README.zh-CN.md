@@ -56,51 +56,7 @@
 
 ## 快速开始
 
-### 1、Docker Compose部署
 
-1、安装curl工具，以Ubuntu为例
-
-```bash
-apt install curl -y
-```
-
-2、安装docker和docker compose
-
-```bash
-curl -fsSL https://get.docker.com | sh
-```
-
-3、使用docker构建并部署
-
-```bash
-git clone https://github.com/simple-is-awesome/simple.git
-# 进入文件夹
-cd simple
-
-mv .env.example .env
-
-docker build -t blog .
-
-docker compose up -d
-```
-
-4、更新
-
-```bash
-# 使用 Docker Compose 停止并删除在 docker-compose.yml 文件中定义的所有服务、容器、网络和卷。
-docker compose down
-# 从 Docker Hub 拉取名为 jaya2021/simple-blog-njxzc 的镜像。这将下载指定镜像的最新版本。
-# 如果你需要特定版本，可以在镜像名后添加 :<tag>，如 jaya2021/simple-blog-njxzc:1.0.0
-docker pull jaya2021/simple-blog-njxzc
-# 使用 Docker Compose 启动和运行定义在 docker-compose.yml 文件中的服务。
-# -d 标志表示以 "detached"（分离）模式运行，也就是在后台运行，不会阻塞当前终端。
-docker compose up -d
-
-# 注：这种方式更新，原本的旧镜像依然存在，如果你想删除旧镜像，请按照以下方式进行。
-docker images
-# 找到旧镜像的image id，接着使用以下命令删除旧镜像。
-docker rmi old_image_id
-```
 
 ### 2、Vercel 部署
 
@@ -168,6 +124,53 @@ EMAIL_Secure="true"
 SUPABASE_SERVICE_ROLE_KEY="xxxxxx"
 NEXT_PUBLIC_SUPABASE_ANON_KEY="xxxxxx"
 NEXT_PUBLIC_SUPABASE_URL="xxxxxx"
+```
+
+### 2、Netlify部署
+
+
+### 3、Docker Compose部署
+
+1、安装curl工具，以Ubuntu为例
+
+```bash
+apt install curl -y
+```
+
+2、安装docker和docker compose
+
+```bash
+curl -fsSL https://get.docker.com | sh
+```
+
+3、使用docker构建并部署
+
+> 为什么不提供dockerhub镜像，直接拉取部署不更好吗？
+
+因为next.js在构建镜像时，会将以`NEXT_PUBLIC_`开头的环境变量内联至镜像，这会导致.env环境变量根本载入不进docker容器。
+
+```bash
+git clone https://github.com/simple-is-awesome/simple.git
+# 进入文件夹
+cd simple
+
+mv .env.example .env
+
+docker build -t blog .
+
+docker compose up -d
+```
+
+4、更新
+
+```bash
+docker compose down
+
+修改.env或者二次开发
+
+docker build -t blog .
+
+docker compose up -d
 ```
 
 ## Todo
