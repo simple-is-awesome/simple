@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   app:
-    image: jaya2021/simple-blog-njxzc:latest
+    image: blog:latest
     ports:
       - '3001:3000'
     volumes:

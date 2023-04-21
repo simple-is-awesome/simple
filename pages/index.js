@@ -52,7 +52,7 @@ export default function Home({ allPostsData, recentPosts, allTags }) {
 	)
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 	const allPostsData = getSortedPostsData()
 	const recentPosts = allPostsData.slice(0, 5)
 	const allTags = getAllTags()
