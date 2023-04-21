@@ -70,17 +70,12 @@ apt install curl -y
 curl -fsSL https://get.docker.com | sh
 ```
 
-3、使用docker compose部署
+3、使用docker构建并部署
 
 ```bash
-# 新建博客文件夹
-mkdir simple_blog
+git clone https://github.com/simple-is-awesome/simple.git
 # 进入文件夹
-cd simple_blog
-# 下载docker-compose.yml文件，指定输出文件名
-curl -fsSL https://raw.githubusercontent.com/simple-is-awesome/simple/main/docker-compose.yml -o docker-compose.yml
-# 下载.env.example文件，指定输出文件名
-curl -fsSL https://raw.githubusercontent.com/simple-is-awesome/simple/main/.env.example -o .env
+cd simple
 
 # 编辑.env文件的内容，填写环境变量
 
