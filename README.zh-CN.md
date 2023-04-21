@@ -185,8 +185,8 @@ docker compose down
 docker build -t blog .
 # 根据 docker-compose.yml 文件中的定义启动并运行docker容器
 docker compose up -d
-# 删除所有未被容器引用的镜像
-docker image prune -a
+# 强制删除所有未被容器引用的镜像
+docker image prune -af
 ```
 
 - .env文件的参数
@@ -284,10 +284,27 @@ date: "2023-03-30"
 tags: ["github","markdown"]
 slug: "github-flavored-markdown"
 summary: "总结GitHub Flavored Markdown语法"
+showtoc: true
 ---
 ```
 
-保存后，访问`https://demo.exmaple.com`，即可访问到包含你最新文章的博客。
+8、重复更新步骤
+
+```bash
+# 停止并删除由 docker-compose.yml 文件定义的服务（容器）及其相关资源
+docker compose down
+
+# 修改.env或者二次开发（修改过程可见下方解释）
+
+# 重新创建一个名为"blog"的docker镜像
+docker build -t blog .
+# 根据 docker-compose.yml 文件中的定义启动并运行docker容器
+docker compose up -d
+# 强制删除所有未被容器引用的镜像
+docker image prune -af
+```
+
+执行完此步骤，访问`https://demo.exmaple.com`，即可访问到包含你最新文章的博客。
 
 ## Todo
 

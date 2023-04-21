@@ -186,8 +186,8 @@ docker compose down
 docker build -t blog .
 # Start and run the docker container as defined in the docker-compose.yml file
 docker compose up -d
-# Delete all images that are not referenced by a container
-docker image prune -a
+# Force delete all images that are not referenced by a container
+docker image prune -af
 ```
 
 - Parameters of the .env file
@@ -255,6 +255,57 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=xxxxxx
 # API URL for Supabase project (e.g. https://api.supabase.exmaple.com, see the tutorial in self-hosted supabase)
 NEXT_PUBLIC_SUPABASE_URL=xxxxxx
 ```
+
+6、The reverse proxy blog docker and the host corresponding port
+
+- Edit /etc/caddy/Caddyfile
+
+```
+demo.example.com {
+	reverse_proxy localhost:3001
+}
+```
+
+- Reload caddy
+
+```bash
+systemctl reload caddy
+```
+
+7、Writing a blog
+
+Create a new md or mdx file in the posts folder under the simple folder.
+
+Follow the frontmatter as shown below:
+
+```
+---
+title: "GitHub Flavored Markdown syntax"
+date: "2023-03-30"
+tags: ["github", "markdown"]
+slug: "github-flavored-markdown"
+summary: "Summary of GitHub Flavored Markdown syntax"
+showtoc: true
+---
+```
+
+8、Repeat the update step
+
+```bash
+# Stop and delete the services (containers) and their related resources defined by the docker-compose.yml file
+docker compose down
+
+# Modify .env or secondary development (see below for explanation of modification process)
+
+# Re-create a docker image named "blog"
+docker build -t blog .
+# Start and run the docker container as defined in the docker-compose.yml file
+docker compose up -d
+# Force Delete all images that are not referenced by a container
+docker image prune -af
+```
+
+After done the scripts above, visit `https://demo.exmaple.com` to access the blog containing your latest post.
 
 ## Todo
 
