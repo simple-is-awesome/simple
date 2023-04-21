@@ -15,6 +15,7 @@ RUN \
   else echo "Lockfile not found." && exit 1; \
   fi
 
+
 # Rebuild the source code only when needed
 FROM base AS builder
 WORKDIR /app
@@ -48,15 +49,6 @@ COPY --from=builder /app/public ./public
 # https://nextjs.org/docs/advanced-features/output-file-tracing
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
-
-# Copy entrypoint.sh and .env.production files
-COPY entrypoint.sh .
-COPY .env.production .
-
-# Install bash and set entrypoint.sh as executable
-RUN apk add --no-cache --upgrade bash
-RUN ["chmod", "+x", "./entrypoint.sh"]
-ENTRYPOINT ["./entrypoint.sh"]
 
 USER nextjs
 

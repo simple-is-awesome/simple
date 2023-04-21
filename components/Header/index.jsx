@@ -29,7 +29,7 @@ export default function Header() {
 		<header className="flex justify-between items-center border-b border-gray-30 py-3 px-5">
 			<div className="flex-grow">
 				<div className="text-xl pl-6">
-					<Link href="/">{process.env.NEXT_PUBLIC_SITE_TITLE}</Link>
+					<Link href="/">{global.process.env.NEXT_PUBLIC_SITE_TITLE}</Link>
 				</div>
 			</div>
 			<div className="hidden md:block lg:hidden">
