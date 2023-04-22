@@ -10,13 +10,11 @@
 ![MIT](https://img.shields.io/github/license/simple-is-awesome/simple?style=plastic)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fdemo.njxzc.top)
 
-[Demo Website](https://demo.njxzc.top) | For more details, please see the documentation：[Simple Docs](https://docs.njxzc.top).
+[Demo Website](https://demo.njxzc.top) | [中文说明](https://github.com/simple-is-awesome/simple/blob/main/README.zh-CN.md) | For more details, please see the documentation：[Simple Docs](https://docs.njxzc.top).
 
 ## TL;DR
 
 A minimalist blogging system built specifically for bloggers. Technology stack: Next.js + Tailwind CSS + Supabase.
-
-[Demo](https://demo.njxzc.top) | [中文说明](https://github.com/simple-is-awesome/simple/README.zh-CN.md)
 
 ## Screenshots
 

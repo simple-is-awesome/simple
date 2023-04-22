@@ -10,7 +10,7 @@
 ![MIT](https://img.shields.io/github/license/simple-is-awesome/simple?style=plastic)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fdemo.njxzc.top)
 
-[演示网站](https://demo.njxzc.top) | 更多详情请见文档：[Simple Docs](https://docs.njxzc.top).
+[演示网站](https://demo.njxzc.top) | [English Version](https://github.com/simple-is-awesome/simple/blob/main/README.md) | 更多详情请见文档：[Simple Docs](https://docs.njxzc.top).
 
 ## 简要说明
 
