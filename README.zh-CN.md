@@ -10,7 +10,7 @@
 ![MIT](https://img.shields.io/github/license/simple-is-awesome/simple?style=plastic)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fdemo.njxzc.top)
 
-[演示网站](https://demo.njxzc.top) | 更多详情请见文档：[simple blog docs](https://docs.njxzc.top).
+[演示网站](https://demo.njxzc.top) | 更多详情请见文档：[Simple Docs](https://docs.njxzc.top).
 
 ## 简要说明
 
@@ -66,21 +66,21 @@
 
 更多信息，如设置环境变量，请访问[这部分项目文档](https://docs.njxzc.top/docs/usage/vercel-deploy/)。
 
-## 2、Vercel部署
+### 2、Netlify部署
 
-用Netlify部署样例
+用Netlify部署样例。
 
 [![部署到Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/simple-is-awesome/simple)
 
 更多信息，如设置环境变量，请访问[这部分项目文档](https://docs.njxzc.top/docs/usage/netlify-deploy/)。
 
-## 3、Docker Compose部署
+### 3、Docker Compose部署
 
 你可以访问[这部分项目文档](https://docs.njxzc.top/docs/usage/selfhosted-deploy)来了解更多。
 
 ## Todo
 
-- [ ] Youtube以及Bilibili视频演示
+- [ ] Youtube和Bilibili视频演示
 
 - [ ] 将js代码重构为ts
 

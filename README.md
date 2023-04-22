@@ -10,7 +10,7 @@
 ![MIT](https://img.shields.io/github/license/simple-is-awesome/simple?style=plastic)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fdemo.njxzc.top)
 
-[Demo Website](https://demo.njxzc.top) | For more details, please see the documentation：[simple blog docs](https://docs.njxzc.top).
+[Demo Website](https://demo.njxzc.top) | For more details, please see the documentation：[Simple Docs](https://docs.njxzc.top).
 
 ## TL;DR
 
@@ -46,9 +46,9 @@ A minimalist blogging system built specifically for bloggers. Technology stack: 
 
     - View article table of contents (controlled by showtoc parameter)
 
-    - Summarize article summary using ChatGPT
+    - Using ChatGPT to summarize blog posts
 
-    - Comment on article/reply to comment, if a child comment exists, all its parent comments will receive email alerts
+    - Comment on article/Reply to comment, if a child comment was created, all its parent comments will receive email alerts
 
 - Gallery to display images
 
@@ -66,25 +66,25 @@ Deploy the example with Vercel.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/simple-is-awesome/simple)
 
-more information such as setting environment variables, please visit [this part of the project docs](https://docs.njxzc.top/docs/usage/vercel-deploy/).
+More information such as setting environment variables, please visit [this part of the project docs](https://docs.njxzc.top/docs/usage/vercel-deploy/).
 
-## 2、Vercel Deploy
+### 2、Netlify Deploy
 
-Deploy the example with Netlify
+Deploy the example with Netlify.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/simple-is-awesome/simple)
 
-more information such as setting environment variables, please visit [this part of the project docs](https://docs.njxzc.top/docs/usage/netlify-deploy/).
+More information such as setting environment variables, please visit [this part of the project docs](https://docs.njxzc.top/docs/usage/netlify-deploy/).
 
-## 3、Docker Compose deployment
+### 3、Docker Compose deployment
 
 You can visit [this part of the project docs](https://docs.njxzc.top/docs/usage/selfhosted-deploy) to learn more.
 
 ## Todo
 
-- [ ] refactor js code to ts
-
 - [ ] Youtube and Bilibili Video demonstration
+
+- [ ] Refactor js code to ts
 
 ## License
 
