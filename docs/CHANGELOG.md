@@ -1,3 +1,13 @@
+# [4.0.0](https://github.com/simple-is-awesome/simple/compare/v3.0.1...v4.0.0) (2023-04-22)
+
+
+* :pencil: Finish the README ([4aceeaf](https://github.com/simple-is-awesome/simple/commit/4aceeaf587a7798d02790bf743fe5ba96bb649e1))
+
+
+### BREAKING CHANGES
+
+* English and Chinese README finished && Docker Compose deployment finished && All blog features finished.
+
 ## [3.0.1](https://github.com/simple-is-awesome/simple/compare/v3.0.0...v3.0.1) (2023-04-18)
 
 
