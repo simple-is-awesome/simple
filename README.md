@@ -74,7 +74,7 @@ Deploy the example with Netlify.
 
 More information such as setting environment variables, please visit [this part of the project docs](https://docs.njxzc.top/docs/usage/netlify-deploy/).
 
-### 3、Docker Compose deployment
+### 3、Docker Compose Deploy
 
 You can visit [this part of the project docs](https://docs.njxzc.top/docs/usage/selfhosted-deploy) to learn more.
 
