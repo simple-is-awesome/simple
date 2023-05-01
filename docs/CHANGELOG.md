@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/simple-is-awesome/simple/compare/v4.0.0...v4.0.1) (2023-05-01)
+
+
+### Bug Fixes
+
+* :bug: add aplayer and etc. feature && fix navbar md ui bug ([ce7edff](https://github.com/simple-is-awesome/simple/commit/ce7edff1dedf862ba4502571f6c674512d9d6394))
+
 # [4.0.0](https://github.com/simple-is-awesome/simple/compare/v3.0.1...v4.0.0) (2023-04-22)
 
 
