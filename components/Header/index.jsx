@@ -32,9 +32,6 @@ export default function Header() {
 					<Link href="/">{process.env.NEXT_PUBLIC_SITE_TITLE}</Link>
 				</div>
 			</div>
-			<div className="hidden md:block lg:hidden">
-				<Search />
-			</div>
 			<div className="flex items-center space-x-4">
 				<div className="hidden lg:block">
 					<Search />

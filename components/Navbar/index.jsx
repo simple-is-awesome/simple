@@ -21,6 +21,7 @@ export default function Navbar({ RenderThemeChanger }) {
 	}
 	const { t } = useTranslation('common')
 	const home = t('Home')
+	const blog = t('Blog')
 	const about = t('About')
 	const gallery = t('Gallery')
 	const rss = t('RSS')
@@ -57,6 +58,12 @@ export default function Navbar({ RenderThemeChanger }) {
 							<HomeIcon />
 							<span>{home}</span>
 						</Link>
+					</li>
+					<li className="hidden md:block">
+						<a href="https://blog.gujiakai.top" className="flex items-center dark:text-gray-100" target='blank'>
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12.5 10H10c-.55 0-1-.45-1-1s.45-1 1-1h2.5c.55 0 1 .45 1 1s-.45 1-1 1m2.5 4c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1s.45 1 1 1h4c.55 0 1-.45 1-1m7-10v16c0 1.11-.89 2-2 2H4c-1.11 0-2-.89-2-2V4c0-1.11.89-2 2-2h16c1.11 0 2 .89 2 2m-4 8s0-1-1-1c-.95.03-1-1-1-1V8c0-1.66-1.34-3-3-3H9C7.34 5 6 6.34 6 8v7c0 1.66 1.34 3 3 3h6c1.66 0 3-1.34 3-3v-3z" fill="currentColor"/></svg>
+							<span>{blog}</span>
+						</a>
 					</li>
 					<li className="hidden md:block">
 						<Link href="/about" className="flex items-center dark:text-gray-100">
@@ -114,14 +121,14 @@ export default function Navbar({ RenderThemeChanger }) {
 										))}
 									</li>
 									<li className="py-2 bg-white rounded-md shadow-lg bg-white dark:bg-gray-600">
-										<div className="block px-4 py-2 text-sm">{RenderThemeChanger()}</div>
+										<div className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700">{RenderThemeChanger()}</div>
 									</li>
 								</ul>
 							</div>
 						)}
 					</li>
 
-					<li className="md:hidden relative">
+					<li className="md:hidden relative z-50">
 						<button
 							onClick={handleMobileMenuClick}
 							aria-expanded={mobileMenuVisible ? 'true' : 'false'}>
@@ -134,6 +141,11 @@ export default function Navbar({ RenderThemeChanger }) {
 									<Link href="/" className="flex items-center hover:bg-gray-100 dark:hover:bg-gray-700">
 										<span className='mx-auto'>{home}</span>
 									</Link>
+								</li>
+								<li>
+									<a href="https://blog.gujiakai.top" className="flex items-center hover:bg-gray-100 dark:hover:bg-gray-700" target='blank'>
+										<span className='mx-auto'>{blog}</span>
+									</a>
 								</li>
 								<li>
 									<Link href="/about" className="flex items-center hover:bg-gray-100 dark:hover:bg-gray-700">

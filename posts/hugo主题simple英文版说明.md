@@ -24,7 +24,7 @@ Confucius once said, "Life is really simple, but we insist on making it complica
 
 ## Screenshot
 
-![Screenshot](https://vip2.loli.io/2023/03/16/bRuOzHDndLXm8kT.webp)
+![Screenshot](https://vip2.loli.io/2023/05/01/lQFhg3ZA85PVwuY.png)
 
 ## Pros
 

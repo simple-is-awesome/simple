@@ -13,7 +13,7 @@ export default function Gallery({ images }) {
 			</Head>
 			<div className='text-3xl text-center my-3'>{gallery}</div>
 			<div className='flex justify-center'>
-				<ImageGallery items={images} thumbnailPosition="right"/>
+				<ImageGallery items={images} thumbnailPosition="right" autoPlay="true"/>
 			</div>
 		</Layout>
 	)

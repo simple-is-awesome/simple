@@ -11,13 +11,14 @@ export default function ChatGPTSummary({ contentMarkdown, params, tags }) {
 
 	const fetchSummary = () => {
 		setIsFetching(true)
+		const truncatedContentMarkdown = contentMarkdown.slice(0, 1000)
 		fetch('/api/chatgpt', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
 			},
 			body: JSON.stringify({
-				message: `using Chinese to summary this article. The article content is: ${contentMarkdown}.
+				message: `using Chinese to summary this article. The article content is: ${truncatedContentMarkdown}.
 				Please summary this article within 100 chinese words.`,
 			}),
 		})

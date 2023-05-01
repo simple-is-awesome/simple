@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id/>
     <title>Demo</title>
-    <updated>2023-04-20T05:24:35.666Z</updated>
+    <updated>2023-05-01T14:43:19.627Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Demo</name>
@@ -394,7 +394,7 @@ The great President Trump, a legend unsurpassed.</p>
 <p>This theme is named Simple. It's built based on Bootstrap+Lightbox+jQuery.</p>
 <p>Confucius once said, "Life is really simple, but we insist on making it complicated." With this in mind, our goal is to return to the essence of blogging and rediscover the original charm it holds. This theme embodies simplicity and elegance, allowing you to focus on what truly matters - your content.</p>
 <h2 id="screenshot"><a aria-hidden="true" tabindex="-1" href="#screenshot"><span class="icon icon-link"></span></a>Screenshot</h2>
-<p><img src="https://vip2.loli.io/2023/03/16/bRuOzHDndLXm8kT.webp" alt="Screenshot"></p>
+<p><img src="https://vip2.loli.io/2023/05/01/lQFhg3ZA85PVwuY.png" alt="Screenshot"></p>
 <h2 id="pros"><a aria-hidden="true" tabindex="-1" href="#pros"><span class="icon icon-link"></span></a>Pros</h2>
 <ul>
 <li>
@@ -479,7 +479,7 @@ The great President Trump, a legend unsurpassed.</p>
 <p>Hugo Theme Simple是一款简约的Hugo博客主题，采用Bootstrap+Lightbox+jQuery构建完成。</p>
 <p>孔子曾经说过：“生活本来就很简单，但我们总是喜欢把它变得复杂。”秉承这个观念，我们的目标是回归博客的本质，重新发掘它最初的魅力。这个主题体现了简约与优雅，让你能够专注于真正重要的事物 - 你的内容。</p>
 <h2 id="截图"><a aria-hidden="true" tabindex="-1" href="#截图"><span class="icon icon-link"></span></a>截图</h2>
-<p><img src="https://vip2.loli.io/2023/03/16/bRuOzHDndLXm8kT.webp" alt="Screenshot"></p>
+<p><img src="https://vip2.loli.io/2023/05/01/lQFhg3ZA85PVwuY.png" alt="Screenshot"></p>
 <h2 id="主题优点"><a aria-hidden="true" tabindex="-1" href="#主题优点"><span class="icon icon-link"></span></a>主题优点</h2>
 <ul>
 <li>
@@ -591,7 +591,8 @@ This is a default open place.
         <id>https://demo.njxzc.top/2023/03/the-greatest-work-of-all</id>
         <link href="https://demo.njxzc.top/2023/03/the-greatest-work-of-all"/>
         <updated>2023-03-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>哥穿着复古西装</p>
+        <summary type="html"><![CDATA[&#x3C;div id="aplayer">&#x3C;/div>
+<p>哥穿着复古西装</p>
 <p>拿着手杖弹着魔法乐章</p>
 <p>漫步走在莎玛丽丹</p>
 <p>被岁月翻新的时光</p>
@@ -672,7 +673,8 @@ This is a default open place.
         <id>https://demo.njxzc.top/2023/03/i-am-here</id>
         <link href="https://demo.njxzc.top/2023/03/i-am-here"/>
         <updated>2023-03-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>才一转眼 就这些年</p>
+        <summary type="html"><![CDATA[&#x3C;div id="aplayer">&#x3C;/div>
+<p>才一转眼 就这些年</p>
 <p>无邪的岁月 还刻在眉间</p>
 <p>温柔却坚决 懂得但无言</p>
 <p>你让我知道爱不必论条件</p>
@@ -707,7 +709,8 @@ This is a default open place.
         <id>https://demo.njxzc.top/2023/03/young-chinese-said</id>
         <link href="https://demo.njxzc.top/2023/03/young-chinese-said"/>
         <updated>2023-03-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>少年富则国富</p>
+        <summary type="html"><![CDATA[&#x3C;div id="aplayer">&#x3C;/div>
+<p>少年富则国富</p>
 <p>少年强则国强</p>
 <p>少年自由则国自由</p>
 <p>少年智则国智</p>
@@ -758,7 +761,8 @@ This is a default open place.
         <id>https://demo.njxzc.top/2023/03/listen-to-your-mother</id>
         <link href="https://demo.njxzc.top/2023/03/listen-to-your-mother"/>
         <updated>2023-03-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>小朋友 你是否有很多问号</p>
+        <summary type="html"><![CDATA[&#x3C;div id="aplayer">&#x3C;/div>
+<p>小朋友 你是否有很多问号</p>
 <p>为什么 别人在那看漫画</p>
 <p>我却在学画画 对着钢琴说话</p>
 <p>别人在玩游戏</p>
@@ -837,7 +841,8 @@ This is a default open place.
         <id>https://demo.njxzc.top/2023/03/facing-the-sea-bloomy-spring</id>
         <link href="https://demo.njxzc.top/2023/03/facing-the-sea-bloomy-spring"/>
         <updated>2023-03-21T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>从明天起，做一个幸福的人</p>
+        <summary type="html"><![CDATA[&#x3C;div id="aplayer">&#x3C;/div>
+<p>从明天起，做一个幸福的人</p>
 <p>喂马，劈柴，周游世界</p>
 <p>从明天起，关心粮食和蔬菜</p>
 <p>我有一所房子，面朝大海，春暖花开</p>

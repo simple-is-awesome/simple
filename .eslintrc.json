@@ -58,5 +58,8 @@
             "error",
             "smart-tabs"
         ]
+    },
+    "globals": {
+        "APlayer": "readonly"
     }
 }

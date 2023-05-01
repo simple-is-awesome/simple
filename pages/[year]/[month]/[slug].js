@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useState, useEffect } from 'react'
+import Script from 'next/script'
 import readingTime from 'reading-time'
 import AccessTimeIcon from '@mui/icons-material/AccessTime'
 import ArticleIcon from '@mui/icons-material/Article'
@@ -14,7 +16,30 @@ import ScrollToTop from 'components/ScrollToTop'
 import { getAllPostMetadata, getPostDataByFileName } from 'lib/posts'
 
 
-export default function Post({ postData, params,stats }) { 
+export default function Post({ postData, params, stats }) { 
+	const [ap, setAp] = useState(null)
+
+	useEffect(() => {
+		const initializeAPlayer = () => {
+		  if (typeof window !== 'undefined' && window.APlayer && postData.audio && !ap) {
+				const player = new APlayer({
+			  container: document.getElementById('aplayer'),
+			  audio: [postData.audio],
+				})
+
+				setAp(player)
+		  }
+		}
+
+		initializeAPlayer()
+
+		return () => {
+		  if (ap) {
+				ap.destroy()
+		  }
+		}
+	}, [ap, postData])
+	
 	return (
 		<ArticleLayout>
 			{/* 标题 */}
@@ -22,10 +47,12 @@ export default function Post({ postData, params,stats }) {
 				<title>{postData.title}</title>
 			</Head>
 
+			<Script src="/js/APlayer.min.js" strategy="beforeInteractive" />
+
 			{/* 主体 */}
 			<div className="flex flex-col md:grid md:grid-cols-6 md:gap-2">
 				{/* chatgpt总结 */}
-				<div className="md:col-span-1 order-1 md:order-1">
+				<div className="hidden xl:block md:col-span-1 order-1 md:order-1">
 					{process.env.NEXT_PUBLIC_OPENAI_API_KEY_AVAILABLE && (
 						<div className='md:sticky top-1/4 bottom-1/4 p-2 bg-gray-300 shadow-lg rounded-md dark:text-gray-900 mx-auto md:mx-0 w-full md:w-auto'>
 							<ChatGPTSummary contentMarkdown={postData.contentMarkdown} params={params} tags={postData.tags} />
@@ -55,7 +82,7 @@ export default function Post({ postData, params,stats }) {
 								</div>
 							</div>
 
-							<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+							<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} className='tracking-wide leading-loose' />
 							<div className="my-3">
 								<span className="font-bold">Tags:{' '}</span>
 								{postData.tags.map((tag, index) => (
