@@ -11,5 +11,5 @@ export async function getServerSideProps() {
 }
 
 export default function GalleryPage({ images }) {
-	return <Gallery images={images} />
+	return <Gallery images={images} className="z-10"/>
 }
