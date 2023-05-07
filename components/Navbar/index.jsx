@@ -78,7 +78,7 @@ export default function Navbar({ RenderThemeChanger }) {
 						</Link>
 					</li>
 					<li className="hidden md:block">
-						<Link href="/rss.xml" className="flex items-center dark:text-gray-100">
+						<Link href="/index.xml" className="flex items-center dark:text-gray-100">
 							<RssFeedIcon />
 							<span>{rss}</span>
 						</Link>
@@ -158,7 +158,7 @@ export default function Navbar({ RenderThemeChanger }) {
 									</Link>
 								</li>
 								<li>
-									<Link href="/rss.xml" className="flex items-center hover:bg-gray-100 dark:hover:bg-gray-700">
+									<Link href="/index.xml" className="flex items-center hover:bg-gray-100 dark:hover:bg-gray-700">
 										<span className='mx-auto'>{rss}</span>
 									</Link>
 								</li>

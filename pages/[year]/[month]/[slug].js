@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-import Script from 'next/script'
 import readingTime from 'reading-time'
 import AccessTimeIcon from '@mui/icons-material/AccessTime'
 import ArticleIcon from '@mui/icons-material/Article'
@@ -46,8 +45,6 @@ export default function Post({ postData, params, stats }) {
 			<Head>
 				<title>{postData.title}</title>
 			</Head>
-
-			<Script src="/js/APlayer.min.js" strategy="beforeInteractive" />
 
 			{/* 主体 */}
 			<div className="flex flex-col md:grid lg:grid-cols-6 lg:gap-2">

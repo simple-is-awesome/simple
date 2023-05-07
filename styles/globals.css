@@ -51,3 +51,6 @@
     padding: 20px 0;
   }
 
+  .aplayer-author {
+    @apply dark:text-white text-black !important;
+}
