@@ -15,7 +15,7 @@ export default function SearchPage({ searchResults, term }) {
 		<Layout>
 			{/* 标题 */}
 			<Head>
-				<title>{searchResults}：{term}</title>
+				<title>{term}</title>
 			</Head>
 			{/* 搜索结果 */}
 			<section className="grid grid-cols-1 lg:grid-cols-12 gap-8 px-5">
