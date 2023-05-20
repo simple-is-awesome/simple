@@ -3,11 +3,12 @@ import { Turnstile } from '@marsidev/react-turnstile'
 import validator from 'email-validator'
 
 // 评论表单组件
-export default function CommentForm({quote, setQuote, setUpdateList,parentCommentId,setParentCommentId}) {
+export default function CommentForm({quote, setQuote,setUpdateList,parentCommentId,setParentCommentId}) {
 	const formRef = useRef()
 	const turnstileRef = useRef()
 	const [emailError, setEmailError] = useState('')
 	const [buttonText, setButtonText] = useState('Submit')
+	const contentRef = useRef()
 
 	const handleSubmit = async (e) => {
 		e.preventDefault()
@@ -54,10 +55,16 @@ export default function CommentForm({quote, setQuote, setUpdateList,parentCommen
 		}
 	}
 
-	useEffect(() => {
-		formRef.current.content.value = quote 
+	  useEffect(() => {
+		formRef.current.content.value = quote
+	
+		// 将光标移动到 textarea 的末尾
+		const textarea = contentRef.current
+		textarea.focus()
+		textarea.setSelectionRange(textarea.value.length, textarea.value.length)
 	  }, [quote])
-
+	
+	
 	return (
 		<>
 		  <form ref={formRef}
@@ -104,7 +111,8 @@ export default function CommentForm({quote, setQuote, setUpdateList,parentCommen
 					 className="block text-gray-700 text-sm font-bold mb-2 dark:text-white">
 				您的留言 (HTML标签部分可用):
 			  </label>
-			  <textarea
+					<textarea
+						ref={contentRef}
 						type="text"
 						id="content"
 						name="content"

@@ -8,11 +8,16 @@ export default function Comment() {
 	const [updateList, setUpdateList] = useState(false)
 	const [parentCommentId, setParentCommentId] = useState(null)
 
-	const quoteComment = (comment,commentId) => {
-		setQuote(`<blockquote>${comment.username}的发言:<br/>${comment.content}</blockquote><br/>`)
+	const quoteComment = (comment, commentId) => {
+		// 用正则表达式去匹配和剔除<blockquote>和其内容
+		const refinedContent = comment.content.replace(/<blockquote>[\s\S]*?<\/blockquote>/, '')
+	
+		setQuote(
+		  `<blockquote><pre>引用${comment.username}的发言:</pre><p>${refinedContent}</p></blockquote><br/>\n`
+		)
 		setParentCommentId(commentId)
 	}
-
+	
 	return (
 		<>
 			<h2 className="text-3xl font-bold mt-8 mb-4">留言</h2>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import Identicon from 'identicon.js'
 import CryptoJS from 'crypto-js'
@@ -30,7 +31,7 @@ export default function CommentList({ quoteComment, updateList}) {
 			{comments.length > 0 ? (
 				<div className="comment-list space-y-4">
 					{comments.map((comment) => (
-						<div key={comment.id} className="comment p-4 bg-white dark:bg-gray-800 shadow-md rounded-lg flex flex-col">
+						<div key={comment.id} id={`comment-${comment.id}`} className="comment p-4 bg-white dark:bg-gray-800 shadow-md rounded-lg flex flex-col">
 							<div className="flex justify-between items-center mb-2 border-b border-gray-30">
 								<div className="flex items-center space-x-2">
 									<Image
@@ -50,6 +51,9 @@ export default function CommentList({ quoteComment, updateList}) {
 								</div>
 								<div className="flex justify-end items-center space-x-2">
 									<small><Date dateString={comment.created_at} format="h:mm A M/D/YYYY" /></small>
+									<Link href={`${comment.url}#comment-${comment.id}`} className='text-blue-500 hover:text-blue-700'>
+										#
+									</Link>
 									<button className="text-blue-500 hover:text-blue-700" onClick={() => quoteComment(comment,comment.id)}>
 										Quote
 									</button>
