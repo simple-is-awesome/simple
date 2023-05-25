@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     image: njxzc-blog:latest
     ports:
-      - '3002:3000'
+      - '3003:3000'
     volumes:
       - './posts:/app/posts/'
     restart: always

@@ -57,11 +57,6 @@ export default function CommentForm({quote, setQuote,setUpdateList,parentComment
 
 	  useEffect(() => {
 		formRef.current.content.value = quote
-	
-		// 将光标移动到 textarea 的末尾
-		const textarea = contentRef.current
-		textarea.focus()
-		textarea.setSelectionRange(textarea.value.length, textarea.value.length)
 	  }, [quote])
 	
 	
