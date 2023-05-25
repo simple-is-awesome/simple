@@ -9,7 +9,7 @@ export default function ChatGPTSummary({ contentMarkdown, params, tags }) {
 	const [isCopied, setIsCopied] = useState(false)
 	const [isFetching, setIsFetching] = useState(false)
 
-	const fetchSummary = () => {
+	/*const fetchSummary = () => {
 		setIsFetching(true)
 		const truncatedContentMarkdown = contentMarkdown.slice(0, 1000)
 		fetch('/api/chatgpt', {
@@ -32,8 +32,35 @@ export default function ChatGPTSummary({ contentMarkdown, params, tags }) {
 				console.error('Error fetching summary:', error)
 				setIsFetching(false)
 			})
-	}
+	}*/
 
+	const fetchSummary = () => {
+		setIsFetching(true)
+		let truncatedContentMarkdown = contentMarkdown.slice(0, 1000)
+		truncatedContentMarkdown = truncatedContentMarkdown.replace(/"/g, '\\"') // 对双引号进行转义
+		const message = `using Chinese to summary this article. The article content is: "${truncatedContentMarkdown}".
+				Please summary this article within 100 chinese words.`
+		fetch('/api/chatgpt', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				message: message,
+			}),
+		})
+			.then((response) => response.json())
+			.then(data => {
+				setSummary(`${data.gptResponse}`)
+				setIsFetching(false)
+				setShowCopyButton(true)
+			})
+			.catch(error => {
+				console.error('Error fetching summary:', error)
+				setIsFetching(false)
+			})
+	}
+	
 	const copyText = `标签：${formattedTags}\n总结: ${summary}\nvia: ${process.env.NEXT_PUBLIC_SITE_URL}/${params.year}/${params.month}/${params.slug}`
 
 	return (
