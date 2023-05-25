@@ -59,7 +59,6 @@ export default function CommentForm({quote, setQuote,setUpdateList,parentComment
 		formRef.current.content.value = quote
 	  }, [quote])
 	
-	
 	return (
 		<>
 		  <form ref={formRef}
