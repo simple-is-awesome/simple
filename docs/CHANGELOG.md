@@ -1,3 +1,10 @@
+## [4.0.2](https://github.com/simple-is-awesome/simple/compare/v4.0.1...v4.0.2) (2023-05-25)
+
+
+### Bug Fixes
+
+* fix auto scroll && improve docker-compose.yml file ([b083131](https://github.com/simple-is-awesome/simple/commit/b0831311487999fc3fae462b89e2495ae2bdfe12))
+
 ## [4.0.1](https://github.com/simple-is-awesome/simple/compare/v4.0.0...v4.0.1) (2023-05-01)
 
 
