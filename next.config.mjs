@@ -27,15 +27,6 @@ export default nextTranslate(withBundleAnalyzer(
 		i18n: {
 			defaultLocale: 'zh',
 			locales: ['zh', 'en']
-		},
-		async rewrites() {
-			return [
-			  {
-					source: '/:locale/rss.xml',
-					destination: '/rss.xml',
-					locale: false
-			  },
-			]
 		}
 	})
 ))
