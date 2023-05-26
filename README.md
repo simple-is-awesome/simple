@@ -5,8 +5,6 @@
 <h1 align="center">Simple</h1>
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-![Vercel](https://vercelbadge.vercel.app/api/simple-is-awesome/simple)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a9a7ac9b-9a45-4336-9383-4c76af5b397a/deploy-status)](https://app.netlify.com/sites/demo-njxzc/deploys)
 ![MIT](https://img.shields.io/github/license/simple-is-awesome/simple?style=plastic)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fdemo.njxzc.top)
 
