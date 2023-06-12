@@ -14,7 +14,7 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.6",
+    "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.10.6",
     "@mapbox/rehype-prism": "^0.8.0",
     "@marsidev/react-turnstile": "^0.1.2",
